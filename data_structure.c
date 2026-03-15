@@ -11,7 +11,7 @@ void create_new_element(char* s, size_t len, size_t position, vector_dict* vec) 
                 element->size++;
                 return;
             }
-            //если места нехватило до увеличу и добавлю свою новую позицию
+            //если места нехватило то увеличу и добавлю свою новую позицию
             element->capacity_for_number = element->capacity_for_number * 2;
             element->number_in_text = realloc(element->number_in_text, (element->capacity_for_number) * sizeof(size_t));
             element->number_in_text[element->size] = position;
@@ -61,9 +61,9 @@ vector_dict* Create(const char* str) {
                     vector_d->capacity = 2*vector_d->capacity;
                     vector_d->dict_data = realloc(vector_d->dict_data, (vector_d->capacity) * sizeof(dict));
                 }
-                create_new_element(new_word, len_new_word, j, vector_d);
-                j = point + 1;
+                create_new_element(new_word, len_new_word, j, vector_d);    
             }
+            j = point + 1;
         }
         i++;
     }

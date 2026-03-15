@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Error.h"
-#include "type_info.h"
+#include "typeinfo.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
@@ -27,16 +27,26 @@ typedef struct
 
 typedef struct 
 {
+    size_t* data;
+    size_t size;
+    size_t capacity; 
+
+} vector_len_string;
+
+typedef struct 
+{
     dict* dict_data;
     size_t size;
     size_t capacity;
+    vector_len_string* vector_len_data;
 
 }vector_dict;
 
 
-vector_dict* Create(const char* str);
 
-Error find(const char* find_string, vector_dict* vec, size_t n);
+vector_dict* Create(void* v_str);
+
+Error find(void* v_find_string, vector_dict* vec, size_t n, typeinfo t);
 
 void free_data_struct(vector_dict* vec);
 

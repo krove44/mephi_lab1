@@ -33,19 +33,40 @@ void create_new_element(char* s, size_t len, size_t position, vector_dict* vec) 
 }
 
 
-vector_dict* Create(const char* str) {
+vector_dict* Create(void* v_str) {
+    //привожу к чару
+    const char* str = (const char*)v_str;
     vector_dict* vector_d = (vector_dict*)malloc(sizeof(vector_dict));
     vector_d->size = 0;
     vector_d->capacity = 2;
     vector_d->dict_data = (dict*)malloc(vector_d->capacity * sizeof(dict));
     
+    //реализация массива с префикснами суммами индексов строк до '\n' для второго типа вызова find
+    vector_d->vector_len_data = (vector_len_string*)malloc(sizeof(vector_len_string));
+    vector_d->vector_len_data->size = 1;
+    vector_d->vector_len_data->capacity = 2;
+    vector_d->vector_len_data->data = (size_t*)malloc(vector_d->vector_len_data->capacity * sizeof(size_t));
+    //у нулевой строки нулевое начало
+    vector_d->vector_len_data->data[0] = 0;
 
     size_t j = 0;
     size_t i = 0;
     size_t point = 0;
     size_t len_str = strlen(str);
     while (i <= len_str) {
-        if (str[i] == ' ' || str[i] == '\0') {
+        if (str[i] == '\n') {
+            if (vector_d->vector_len_data->size < vector_d->vector_len_data->capacity){
+                vector_d->vector_len_data->data[vector_d->vector_len_data->size] = i;
+                vector_d->vector_len_data->size++; 
+            }
+            else{
+                vector_d->vector_len_data->capacity *= 2;
+                vector_d->vector_len_data->data = realloc(vector_d->vector_len_data->data, vector_d->vector_len_data->capacity * sizeof(size_t));
+                vector_d->vector_len_data->data[vector_d->vector_len_data->size] = i;
+                vector_d->vector_len_data->size++;
+            }
+        };
+        if (str[i] == ' ' || str[i] == '\0' || str[i] == '\n') {
             point = i;
             if ((point - j) > 0) {
                 size_t len_new_word = point - j;
@@ -70,15 +91,47 @@ vector_dict* Create(const char* str) {
     return vector_d;
 };
 
-Error find(const char* find_string, vector_dict* vec, size_t n) {
-    for (size_t i = 0; i < vec->size; i++){
-        if (strcmp(find_string, vec->dict_data[i].string_data) == 0){
-            printf("%d", vec->dict_data[i].el.number_in_text[n]);
+Error find(void* v_find_string, vector_dict* vec, size_t n, typeinfo type) {
+    const char* find_string = (const char*)v_find_string;
+    if (n < 0) {
+        return BAD_ARGUMENT;
+    }
+    if (type == first_type){
+        for (size_t i = 0; i < vec->size; i++){
+            if (strcmp(find_string, vec->dict_data[i].string_data) == 0){
+                if (vec->dict_data[i].el.size <= n){
+                    printf("Данное слово c такой позицией отсуствует!");
+                    return ALL_OK;
+                };
+                printf("Позиция элемента в тексте: %d \n", vec->dict_data[i].el.number_in_text[n]);
+                return ALL_OK;
+            };
+        };
+        printf("В тексте нет такого слова! \n");
+        return ALL_OK;
+    };
+    if (type == second_type) {
+        if (vec->vector_len_data->size <= n) {
+            printf("Такой строки не существует! \n");
             return ALL_OK;
         };
+        for (size_t i = 0; i < vec->size; i++){
+            if (strcmp(find_string, vec->dict_data[i].string_data) == 0){
+                for(size_t j = 0; j < vec->dict_data[i].el.size; j++){
+                    if(vec->dict_data[i].el.number_in_text[j] <= vec->vector_len_data->data[n] && (vec->dict_data[i].el.number_in_text[j] > vec->vector_len_data->data[n-1])) {
+                        printf("Данное слово находиться в строке %d его индекс относительно строки: %d \n", n, (vec->dict_data[i].el.number_in_text[j] - vec->vector_len_data->data[n-1]));
+                        return ALL_OK;
+                    };
+                }
+                printf("В данной строке слово отсуствует! \n");
+                return ALL_OK;
+            };
+        }
+        printf("В тексте нет такого слова! \n");
+        return ALL_OK;
     }
-    printf("%d", 1234);
-    return ALL_OK;
+    
+    
 }
 
 void free_data_struct(vector_dict* vec) {
@@ -86,5 +139,8 @@ void free_data_struct(vector_dict* vec) {
         free(vec->dict_data[i].el.number_in_text);
         free(vec->dict_data[i].string_data);
     }
+    free(vec->dict_data);
+    free(vec->vector_len_data->data);
+    free(vec->vector_len_data);
     free(vec);
 }

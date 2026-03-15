@@ -46,7 +46,7 @@ typedef struct
 
 vector_dict* Create(void* v_str);
 
-Error find(void* v_find_string, vector_dict* vec, size_t n, typeinfo t);
+Error find(void* v_find_string, vector_dict* vec, int n, typeinfo t);
 
 void free_data_struct(vector_dict* vec);
 

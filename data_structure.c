@@ -56,13 +56,13 @@ vector_dict* Create(void* v_str) {
     while (i <= len_str) {
         if (str[i] == '\n') {
             if (vector_d->vector_len_data->size < vector_d->vector_len_data->capacity){
-                vector_d->vector_len_data->data[vector_d->vector_len_data->size] = i;
+                vector_d->vector_len_data->data[vector_d->vector_len_data->size] = i + 1;
                 vector_d->vector_len_data->size++; 
             }
             else{
                 vector_d->vector_len_data->capacity *= 2;
                 vector_d->vector_len_data->data = realloc(vector_d->vector_len_data->data, vector_d->vector_len_data->capacity * sizeof(size_t));
-                vector_d->vector_len_data->data[vector_d->vector_len_data->size] = i;
+                vector_d->vector_len_data->data[vector_d->vector_len_data->size] = i + 1;
                 vector_d->vector_len_data->size++;
             }
         };
@@ -91,7 +91,7 @@ vector_dict* Create(void* v_str) {
     return vector_d;
 };
 
-Error find(void* v_find_string, vector_dict* vec, size_t n, typeinfo type) {
+Error find(void* v_find_string, vector_dict* vec, int n, typeinfo type) {
     const char* find_string = (const char*)v_find_string;
     if (n < 0) {
         return BAD_ARGUMENT;
@@ -100,35 +100,35 @@ Error find(void* v_find_string, vector_dict* vec, size_t n, typeinfo type) {
         for (size_t i = 0; i < vec->size; i++){
             if (strcmp(find_string, vec->dict_data[i].string_data) == 0){
                 if (vec->dict_data[i].el.size <= n){
-                    printf("Данное слово c такой позицией отсуствует!");
-                    return ALL_OK;
+                    printf("Данное слово c такой позицией отсуствует!\n");
+                    return STRING_NOWHERE;
                 };
                 printf("Позиция элемента в тексте: %d \n", vec->dict_data[i].el.number_in_text[n]);
                 return ALL_OK;
             };
         };
         printf("В тексте нет такого слова! \n");
-        return ALL_OK;
+        return STRING_NOWHERE;
     };
     if (type == second_type) {
-        if (vec->vector_len_data->size <= n) {
+        if (vec->vector_len_data->size < n) {
             printf("Такой строки не существует! \n");
-            return ALL_OK;
+            return STRING_NOWHERE;
         };
         for (size_t i = 0; i < vec->size; i++){
             if (strcmp(find_string, vec->dict_data[i].string_data) == 0){
                 for(size_t j = 0; j < vec->dict_data[i].el.size; j++){
-                    if(vec->dict_data[i].el.number_in_text[j] <= vec->vector_len_data->data[n] && (vec->dict_data[i].el.number_in_text[j] > vec->vector_len_data->data[n-1])) {
+                    if(vec->dict_data[i].el.number_in_text[j] <= vec->vector_len_data->data[n] && (vec->dict_data[i].el.number_in_text[j] >= vec->vector_len_data->data[n-1])) {
                         printf("Данное слово находиться в строке %d его индекс относительно строки: %d \n", n, (vec->dict_data[i].el.number_in_text[j] - vec->vector_len_data->data[n-1]));
                         return ALL_OK;
                     };
                 }
                 printf("В данной строке слово отсуствует! \n");
-                return ALL_OK;
+                return STRING_NOWHERE;
             };
         }
         printf("В тексте нет такого слова! \n");
-        return ALL_OK;
+        return STRING_NOWHERE;
     }
     
     

@@ -58,16 +58,7 @@ void big_second_type_test(){
     printf("\n");
 }
 
-void test(){
-    printf("Привет это мега крутой поисковик, который поможет тебе с поиском индекса слова в строке");
-    char str[500];
-    printf("Введите строку для поиска (можно с пробелами и переносами):\n");
-    fgets(str, sizeof(str), stdin);
-    
-    
-    
 
-}
 
 int main() {
     first_light_test();

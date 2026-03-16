@@ -74,7 +74,7 @@ vector_dict* Create(void* v_str) {
                 memcpy(new_word, &str[j], len_new_word);
                 new_word[len_new_word] = '\0';
 
-                while (i == ' ' && i <= len_str){
+                while (str[i] == ' ' && i <= len_str){
                     i++;
                 }
 
@@ -82,7 +82,8 @@ vector_dict* Create(void* v_str) {
                     vector_d->capacity = 2*vector_d->capacity;
                     vector_d->dict_data = realloc(vector_d->dict_data, (vector_d->capacity) * sizeof(dict));
                 }
-                create_new_element(new_word, len_new_word, j, vector_d);    
+                create_new_element(new_word, len_new_word, j, vector_d); 
+                free(new_word);
             }
             j = point + 1;
         }

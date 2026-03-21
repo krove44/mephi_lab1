@@ -134,6 +134,7 @@ CMakeFiles/text_search.dir/main.c.obj: C:/Users/krove44/Desktop/hard_laba/main.c
   C:/mingw64/x86_64-w64-mingw32/include/dpapi.h \
   C:/mingw64/x86_64-w64-mingw32/include/driverspecs.h \
   C:/mingw64/x86_64-w64-mingw32/include/errhandlingapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/errno.h \
   C:/mingw64/x86_64-w64-mingw32/include/excpt.h \
   C:/mingw64/x86_64-w64-mingw32/include/fibersapi.h \
   C:/mingw64/x86_64-w64-mingw32/include/fileapi.h \
@@ -260,6 +261,7 @@ CMakeFiles/text_search.dir/main.c.obj: C:/Users/krove44/Desktop/hard_laba/main.c
   C:/mingw64/x86_64-w64-mingw32/include/wtypesbase.h \
   C:/Users/krove44/Desktop/hard_laba/Error.h \
   C:/Users/krove44/Desktop/hard_laba/data_structure.h \
+  C:/Users/krove44/Desktop/hard_laba/test.h \
   C:/Users/krove44/Desktop/hard_laba/typeinfo.h
 
 
@@ -547,6 +549,8 @@ C:/mingw64/x86_64-w64-mingw32/include/driverspecs.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/errhandlingapi.h:
 
+C:/mingw64/x86_64-w64-mingw32/include/errno.h:
+
 C:/mingw64/x86_64-w64-mingw32/include/fibersapi.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/winreg.h:
@@ -730,3 +734,5 @@ C:/mingw64/x86_64-w64-mingw32/include/wnnc.h:
 C:/mingw64/x86_64-w64-mingw32/include/wow64apiset.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/wtypes.h:
+
+C:/Users/krove44/Desktop/hard_laba/test.h:

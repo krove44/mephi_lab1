@@ -1,9 +1,6 @@
 CMakeFiles/text_search.dir/main.c.obj: \
  C:\Users\krove44\Desktop\hard_laba\main.c \
- C:\Users\krove44\Desktop\hard_laba\data_structure.h \
- C:\Users\krove44\Desktop\hard_laba\Error.h \
- C:\Users\krove44\Desktop\hard_laba\typeinfo.h \
- C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
+ C:/mingw64/x86_64-w64-mingw32/include/locale.h \
  C:/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
  C:/mingw64/x86_64-w64-mingw32/include/_mingw.h \
  C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
@@ -11,22 +8,6 @@ CMakeFiles/text_search.dir/main.c.obj: \
  C:/mingw64/x86_64-w64-mingw32/include/vadefs.h \
  C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
  C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
- C:/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h \
- C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
- C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
- C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
- C:/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h \
- C:/mingw64/x86_64-w64-mingw32/include/stdlib.h \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
- C:/mingw64/x86_64-w64-mingw32/include/limits.h \
- C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
- C:/mingw64/x86_64-w64-mingw32/include/malloc.h \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdbool.h \
- C:/mingw64/x86_64-w64-mingw32/include/string.h \
- C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
- C:/mingw64/x86_64-w64-mingw32/include/assert.h \
- C:/mingw64/x86_64-w64-mingw32/include/locale.h \
  C:/mingw64/x86_64-w64-mingw32/include/windows.h \
  C:/mingw64/x86_64-w64-mingw32/include/sdkddkver.h \
  C:/mingw64/x86_64-w64-mingw32/include/excpt.h \
@@ -46,11 +27,20 @@ CMakeFiles/text_search.dir/main.c.obj: \
  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/intrin-impl.h \
  C:/mingw64/x86_64-w64-mingw32/include/basetsd.h \
  C:/mingw64/x86_64-w64-mingw32/include/guiddef.h \
+ C:/mingw64/x86_64-w64-mingw32/include/string.h \
+ C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/x86intrin.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/ia32intrin.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mmintrin.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xmmintrin.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mm_malloc.h \
+ C:/mingw64/x86_64-w64-mingw32/include/stdlib.h \
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
+ C:/mingw64/x86_64-w64-mingw32/include/limits.h \
+ C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+ C:/mingw64/x86_64-w64-mingw32/include/malloc.h \
+ C:/mingw64/x86_64-w64-mingw32/include/errno.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/emmintrin.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/pmmintrin.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/tmmintrin.h \
@@ -235,4 +225,16 @@ CMakeFiles/text_search.dir/main.c.obj: \
  C:/mingw64/x86_64-w64-mingw32/include/sec_api/stralign_s.h \
  C:/mingw64/x86_64-w64-mingw32/include/winsvc.h \
  C:/mingw64/x86_64-w64-mingw32/include/mcx.h \
- C:/mingw64/x86_64-w64-mingw32/include/imm.h
+ C:/mingw64/x86_64-w64-mingw32/include/imm.h \
+ C:\Users\krove44\Desktop\hard_laba\test.h \
+ C:/mingw64/x86_64-w64-mingw32/include/assert.h \
+ C:\Users\krove44\Desktop\hard_laba\data_structure.h \
+ C:\Users\krove44\Desktop\hard_laba\Error.h \
+ C:\Users\krove44\Desktop\hard_laba\typeinfo.h \
+ C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
+ C:/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h \
+ C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
+ C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+ C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ C:/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h \
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdbool.h

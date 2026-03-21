@@ -8,3 +8,6 @@ typedef enum
     first_type = 0,
     second_type
 }typeinfo;
+
+typeinfo get_first_type();
+typeinfo get_second_type();

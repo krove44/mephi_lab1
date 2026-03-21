@@ -7,6 +7,15 @@ typedef struct
     
     //функция для получения длины
     size_t (*get_len) (const void* data);
+
+    //функция для клонирования
+    void* (*clone) (const void* data);
+
+    //проверка на то что это делитель проблел, '0' или '\n'
+    bool (*is_delim) (const void* data);
+
+    //размер того с каким типом данных я работаю
+    size_t char_size;
     
     //функция для освобождения памяти  
     void (*free_data)(void* data);

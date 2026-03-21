@@ -33,62 +33,29 @@ void create_new_element(char* s, size_t len, size_t position, vector_dict* vec) 
 }
 
 
-vector_dict* Create(void* v_str) {
-    //привожу к чару
-    const char* str = (const char*)v_str;
-    vector_dict* vector_d = (vector_dict*)malloc(sizeof(vector_dict));
-    vector_d->size = 0;
-    vector_d->capacity = 2;
-    vector_d->dict_data = (dict*)malloc(vector_d->capacity * sizeof(dict));
-    
-    //реализация массива с префикснами суммами индексов строк до '\n' для второго типа вызова find
-    vector_d->vector_len_data = (vector_len_string*)malloc(sizeof(vector_len_string));
-    vector_d->vector_len_data->size = 1;
-    vector_d->vector_len_data->capacity = 2;
-    vector_d->vector_len_data->data = (size_t*)malloc(vector_d->vector_len_data->capacity * sizeof(size_t));
-    //у нулевой строки нулевое начало
-    vector_d->vector_len_data->data[0] = 0;
+vector_dict* Create(void* str, type_info* type) {
+    //делаю вектор словарей
+    vector_dict* vector = (vector_dict*)malloc(sizeof(vector_dict));
+    vector->size = 0;
+    vector->capacity = 2;
+    vector->dict_data = (dict*)malloc(vector->capacity * sizeof(dict));
+    //начинаю бежать по веденной строке и добавлять словари в вектор, а в каждом словаре держу позицию этого слова.
+    size_t len_str = type->get_len(str);
+    unsigned char* ptr = (unsigned char*) str;
+    size_t start_id = 0;
 
-    size_t j = 0;
-    size_t i = 0;
-    size_t point = 0;
-    size_t len_str = strlen(str);
-    while (i <= len_str) {
-        if (str[i] == '\n') {
-            if (vector_d->vector_len_data->size < vector_d->vector_len_data->capacity){
-                vector_d->vector_len_data->data[vector_d->vector_len_data->size] = i + 1;
-                vector_d->vector_len_data->size++; 
+    for(size_t i = 0; i <= len_str; i++) {
+        void* current_char_ptr = ptr + (i*(type->char_size));
+        if (type->is_delim(current_char_ptr)) {
+            size_t word_len = i - start_id;
+            if (word_len > 0){
+                void* word_start_ptr = ptr + (start_id * type->char_size);
+                create_new_element(word_start_ptr, word_len, start_id, vector, type);
             }
-            else{
-                vector_d->vector_len_data->capacity *= 2;
-                vector_d->vector_len_data->data = realloc(vector_d->vector_len_data->data, vector_d->vector_len_data->capacity * sizeof(size_t));
-                vector_d->vector_len_data->data[vector_d->vector_len_data->size] = i + 1;
-                vector_d->vector_len_data->size++;
-            }
-        };
-        if (str[i] == ' ' || str[i] == '\0' || str[i] == '\n') {
-            point = i;
-            if ((point - j) > 0) {
-                size_t len_new_word = point - j;
-                char* new_word = malloc(len_new_word + 1);
-                memcpy(new_word, &str[j], len_new_word);
-                new_word[len_new_word] = '\0';
-
-                while (str[i] == ' ' && i <= len_str){
-                    i++;
-                }
-
-                if(vector_d->size == vector_d->capacity) {
-                    vector_d->capacity = 2*vector_d->capacity;
-                    vector_d->dict_data = realloc(vector_d->dict_data, (vector_d->capacity) * sizeof(dict));
-                }
-                create_new_element(new_word, len_new_word, j, vector_d); 
-            }
-            j = point + 1;
+            start_id = i + 1;
         }
-        i++;
     }
-    return vector_d;
+    return vector;
 };
 
 size_t find(void* v_find_string, vector_dict* vec, int n, typeinfo type) {

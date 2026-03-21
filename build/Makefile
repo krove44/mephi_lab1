@@ -176,6 +176,54 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/main.c.s
 .PHONY : main.c.s
 
+test.obj: test.c.obj
+.PHONY : test.obj
+
+# target to build an object file
+test.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/test.c.obj
+.PHONY : test.c.obj
+
+test.i: test.c.i
+.PHONY : test.i
+
+# target to preprocess a source file
+test.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/test.c.i
+.PHONY : test.c.i
+
+test.s: test.c.s
+.PHONY : test.s
+
+# target to generate assembly for a file
+test.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/test.c.s
+.PHONY : test.c.s
+
+type/char_type.obj: type/char_type.c.obj
+.PHONY : type/char_type.obj
+
+# target to build an object file
+type/char_type.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/type/char_type.c.obj
+.PHONY : type/char_type.c.obj
+
+type/char_type.i: type/char_type.c.i
+.PHONY : type/char_type.i
+
+# target to preprocess a source file
+type/char_type.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/type/char_type.c.i
+.PHONY : type/char_type.c.i
+
+type/char_type.s: type/char_type.c.s
+.PHONY : type/char_type.s
+
+# target to generate assembly for a file
+type/char_type.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/type/char_type.c.s
+.PHONY : type/char_type.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -191,6 +239,12 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... test.obj
+	@echo ... test.i
+	@echo ... test.s
+	@echo ... type/char_type.obj
+	@echo ... type/char_type.i
+	@echo ... type/char_type.s
 .PHONY : help
 
 

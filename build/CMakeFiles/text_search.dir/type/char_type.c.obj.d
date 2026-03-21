@@ -1,8 +1,6 @@
-CMakeFiles/text_search.dir/data_structure.c.obj: \
- C:\Users\krove44\Desktop\hard_laba\data_structure.c \
- C:\Users\krove44\Desktop\hard_laba\data_structure.h \
- C:\Users\krove44\Desktop\hard_laba\Error.h \
- C:\Users\krove44\Desktop\hard_laba\type/type_info.h \
+CMakeFiles/text_search.dir/type/char_type.c.obj: \
+ C:\Users\krove44\Desktop\hard_laba\type\char_type.c \
+ C:\Users\krove44\Desktop\hard_laba\type\type_info.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdbool.h \
  C:/mingw64/x86_64-w64-mingw32/include/stdlib.h \
  C:/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
@@ -17,11 +15,11 @@ CMakeFiles/text_search.dir/data_structure.c.obj: \
  C:/mingw64/x86_64-w64-mingw32/include/limits.h \
  C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
  C:/mingw64/x86_64-w64-mingw32/include/malloc.h \
+ C:/mingw64/x86_64-w64-mingw32/include/string.h \
+ C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
  C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
  C:/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h \
  C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
  C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
  C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
- C:/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h \
- C:/mingw64/x86_64-w64-mingw32/include/string.h \
- C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h
+ C:/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h

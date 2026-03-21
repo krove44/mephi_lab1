@@ -10,6 +10,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/krove44/Desktop/hard_laba/data_structure.c" "CMakeFiles/text_search.dir/data_structure.c.obj" "gcc" "CMakeFiles/text_search.dir/data_structure.c.obj.d"
   "C:/Users/krove44/Desktop/hard_laba/main.c" "CMakeFiles/text_search.dir/main.c.obj" "gcc" "CMakeFiles/text_search.dir/main.c.obj.d"
+  "C:/Users/krove44/Desktop/hard_laba/test.c" "CMakeFiles/text_search.dir/test.c.obj" "gcc" "CMakeFiles/text_search.dir/test.c.obj.d"
+  "C:/Users/krove44/Desktop/hard_laba/type/char_type.c" "CMakeFiles/text_search.dir/type/char_type.c.obj" "gcc" "CMakeFiles/text_search.dir/type/char_type.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

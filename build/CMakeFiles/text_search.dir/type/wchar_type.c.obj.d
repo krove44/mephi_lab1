@@ -1,5 +1,5 @@
-CMakeFiles/text_search.dir/type/char_type.c.obj: \
- C:\Users\krove44\Desktop\hard_laba\type\char_type.c \
+CMakeFiles/text_search.dir/type/wchar_type.c.obj: \
+ C:\Users\krove44\Desktop\hard_laba\type\wchar_type.c \
  C:\Users\krove44\Desktop\hard_laba\type\type_info.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdbool.h \
  C:/mingw64/x86_64-w64-mingw32/include/stdlib.h \
@@ -21,5 +21,6 @@ CMakeFiles/text_search.dir/type/char_type.c.obj: \
  C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
  C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
  C:/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h \
- C:/mingw64/x86_64-w64-mingw32/include/string.h \
- C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h
+ C:/mingw64/x86_64-w64-mingw32/include/wchar.h \
+ C:/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h \
+ C:/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h

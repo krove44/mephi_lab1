@@ -1,6 +1,7 @@
 #pragma once
 #include <stdbool.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 typedef struct 
 {
@@ -29,3 +30,4 @@ typedef struct
 
 
 type_info* get_char_type();
+type_info* get_wchar_type();

@@ -224,6 +224,30 @@ type/char_type.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/type/char_type.c.s
 .PHONY : type/char_type.c.s
 
+type/wchar_type.obj: type/wchar_type.c.obj
+.PHONY : type/wchar_type.obj
+
+# target to build an object file
+type/wchar_type.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/type/wchar_type.c.obj
+.PHONY : type/wchar_type.c.obj
+
+type/wchar_type.i: type/wchar_type.c.i
+.PHONY : type/wchar_type.i
+
+# target to preprocess a source file
+type/wchar_type.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/type/wchar_type.c.i
+.PHONY : type/wchar_type.c.i
+
+type/wchar_type.s: type/wchar_type.c.s
+.PHONY : type/wchar_type.s
+
+# target to generate assembly for a file
+type/wchar_type.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/type/wchar_type.c.s
+.PHONY : type/wchar_type.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -245,6 +269,9 @@ help:
 	@echo ... type/char_type.obj
 	@echo ... type/char_type.i
 	@echo ... type/char_type.s
+	@echo ... type/wchar_type.obj
+	@echo ... type/wchar_type.i
+	@echo ... type/wchar_type.s
 .PHONY : help
 
 

@@ -1,6 +1,5 @@
 #include "type_info.h"
 #include <string.h>
-#include <stdio.h>
 
 static int char_compare(const void* a, const void* b) {
     return strcmp((const char*)a, (const char*)b);

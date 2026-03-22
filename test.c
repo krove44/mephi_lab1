@@ -27,4 +27,16 @@ void first_light_test_error() {
     printf("\n");
 };
 
+void fisrt_wchar_test() {
+    printf("fisrt_wchar_test:\n");
+    vector_dict* sany = Create(L"я и костя", get_wchar_type());
+    assert(find(L"я", sany, 1, get_wchar_type()) == 0);
+    assert(find(L"и", sany, 1, get_wchar_type()) == 2);
+    assert(find(L"костя", sany, 1, get_wchar_type()) == 4);
+    free_data_struct(sany);
+    printf("\n");
+    printf("----------------------------\n");
+    printf("\n");
+}
+
 

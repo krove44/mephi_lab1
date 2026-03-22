@@ -8,5 +8,6 @@ int main() {
     setlocale(LC_ALL, ".UTF8");
     first_light_test();
     first_light_test_error();
+    fisrt_wchar_test();
     return 0;
 }

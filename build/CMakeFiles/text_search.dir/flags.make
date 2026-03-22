@@ -4,7 +4,7 @@
 # compile C with C:/mingw64/bin/gcc.exe
 C_DEFINES = 
 
-C_INCLUDES = 
+C_INCLUDES = @CMakeFiles/text_search.dir/includes_C.rsp
 
 C_FLAGS = -std=gnu99 -finput-charset=UTF-8 -fexec-charset=UTF-8
 

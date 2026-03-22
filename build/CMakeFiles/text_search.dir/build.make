@@ -69,6 +69,7 @@ include CMakeFiles/text_search.dir/progress.make
 include CMakeFiles/text_search.dir/flags.make
 
 CMakeFiles/text_search.dir/data_structure.c.obj: CMakeFiles/text_search.dir/flags.make
+CMakeFiles/text_search.dir/data_structure.c.obj: CMakeFiles/text_search.dir/includes_C.rsp
 CMakeFiles/text_search.dir/data_structure.c.obj: C:/Users/krove44/Desktop/hard_laba/data_structure.c
 CMakeFiles/text_search.dir/data_structure.c.obj: CMakeFiles/text_search.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\krove44\Desktop\hard_laba\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/text_search.dir/data_structure.c.obj"
@@ -83,6 +84,7 @@ CMakeFiles/text_search.dir/data_structure.c.s: cmake_force
 	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krove44\Desktop\hard_laba\data_structure.c -o CMakeFiles\text_search.dir\data_structure.c.s
 
 CMakeFiles/text_search.dir/main.c.obj: CMakeFiles/text_search.dir/flags.make
+CMakeFiles/text_search.dir/main.c.obj: CMakeFiles/text_search.dir/includes_C.rsp
 CMakeFiles/text_search.dir/main.c.obj: C:/Users/krove44/Desktop/hard_laba/main.c
 CMakeFiles/text_search.dir/main.c.obj: CMakeFiles/text_search.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\krove44\Desktop\hard_laba\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/text_search.dir/main.c.obj"
@@ -97,6 +99,7 @@ CMakeFiles/text_search.dir/main.c.s: cmake_force
 	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krove44\Desktop\hard_laba\main.c -o CMakeFiles\text_search.dir\main.c.s
 
 CMakeFiles/text_search.dir/type/char_type.c.obj: CMakeFiles/text_search.dir/flags.make
+CMakeFiles/text_search.dir/type/char_type.c.obj: CMakeFiles/text_search.dir/includes_C.rsp
 CMakeFiles/text_search.dir/type/char_type.c.obj: C:/Users/krove44/Desktop/hard_laba/type/char_type.c
 CMakeFiles/text_search.dir/type/char_type.c.obj: CMakeFiles/text_search.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\krove44\Desktop\hard_laba\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/text_search.dir/type/char_type.c.obj"
@@ -111,6 +114,7 @@ CMakeFiles/text_search.dir/type/char_type.c.s: cmake_force
 	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krove44\Desktop\hard_laba\type\char_type.c -o CMakeFiles\text_search.dir\type\char_type.c.s
 
 CMakeFiles/text_search.dir/type/wchar_type.c.obj: CMakeFiles/text_search.dir/flags.make
+CMakeFiles/text_search.dir/type/wchar_type.c.obj: CMakeFiles/text_search.dir/includes_C.rsp
 CMakeFiles/text_search.dir/type/wchar_type.c.obj: C:/Users/krove44/Desktop/hard_laba/type/wchar_type.c
 CMakeFiles/text_search.dir/type/wchar_type.c.obj: CMakeFiles/text_search.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\krove44\Desktop\hard_laba\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/text_search.dir/type/wchar_type.c.obj"
@@ -125,6 +129,7 @@ CMakeFiles/text_search.dir/type/wchar_type.c.s: cmake_force
 	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krove44\Desktop\hard_laba\type\wchar_type.c -o CMakeFiles\text_search.dir\type\wchar_type.c.s
 
 CMakeFiles/text_search.dir/test.c.obj: CMakeFiles/text_search.dir/flags.make
+CMakeFiles/text_search.dir/test.c.obj: CMakeFiles/text_search.dir/includes_C.rsp
 CMakeFiles/text_search.dir/test.c.obj: C:/Users/krove44/Desktop/hard_laba/test.c
 CMakeFiles/text_search.dir/test.c.obj: CMakeFiles/text_search.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\krove44\Desktop\hard_laba\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/text_search.dir/test.c.obj"

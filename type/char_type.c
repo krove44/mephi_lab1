@@ -1,4 +1,4 @@
-#include "typeinfo.h"
+#include "type_info.h"
 #include <string.h>
 #include <stdio.h>
 
@@ -10,11 +10,20 @@ static size_t char_length(const void* a) {
     return strlen((const char*)a);
 }
 
-static void* char_clone(const void* data) {
+static void* char_clone(const void* data, size_t l) {
     const char* s = (const char*)data;
-    char* copy = malloc(strlen(s) + 1);
-    if (copy) strcpy(copy, s);
+    char* copy = malloc(l + 1);
+    if (copy) {
+        memcpy(copy, s, l);
+        copy[l] = '\0';
+    };
     return copy;
+}
+
+static void char_free(void* data) {
+    if (data) {
+        free(data);
+    }
 }
 
 static bool char_is_delim(const void* data) {
@@ -32,7 +41,7 @@ type_info char_type = {
     .clone = char_clone,
     .is_delim = char_is_delim,
     .char_size = sizeof(char),
-    .free_data = NULL,
+    .free_data = char_free,
     .print = char_print
 };
 

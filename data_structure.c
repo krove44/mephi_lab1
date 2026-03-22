@@ -29,7 +29,7 @@ void create_new_element(void* s, size_t len, size_t position, vector_dict* vec, 
     //создаю в словаре поисковое слово
     dict* just_dict = &vec->dict_data[vec->size - 1];
     just_dict->type = type;
-    just_dict->string_data = type->clone(s);
+    just_dict->string_data = type->clone(s, len);
     just_dict->len = len;
     //создаю новый массив элементов которых нет в словаре
     just_dict->el.size = 1;
@@ -77,7 +77,7 @@ size_t find(void* find_string, vector_dict* vec, int n, type_info* type) {
                     return -1;
                 }
                 print_info_about_error(ALL_OK);
-                return vec->dict_data->el.number_in_text[n-1];
+                return vec->dict_data[i].el.number_in_text[n-1];
             };
         };
     print_info_about_error(STRING_NOWHERE);
@@ -87,7 +87,7 @@ size_t find(void* find_string, vector_dict* vec, int n, type_info* type) {
 void free_data_struct(vector_dict* vec) {
     for (size_t i = 0; i < vec->size; i++) {
         free(vec->dict_data[i].el.number_in_text);
-        vec->dict_data[i].type->free_data(vec->dict_data[i].string_data);
+        vec->dict_data[i].type->free_data((vec->dict_data[i].string_data));
     }
     free(vec->dict_data);
     free(vec);

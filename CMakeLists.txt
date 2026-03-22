@@ -10,8 +10,10 @@ endif()
 add_executable(text_search 
     data_structure.c
     main.c
+    type/char_type.c
+    test.c
     data_structure.h
-    typeinfo.h
+    type/type_info.h
     Error.h
     test.h
 )

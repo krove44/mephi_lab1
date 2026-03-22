@@ -1,5 +1,6 @@
 #pragma once
 #include <stdbool.h>
+#include <stdlib.h>
 
 typedef struct 
 {
@@ -10,7 +11,7 @@ typedef struct
     size_t (*get_len) (const void* data);
 
     //функция для клонирования
-    void* (*clone) (const void* data);
+    void* (*clone) (const void* data, size_t l);
 
     //проверка на то что это делитель проблел, '0' или '\n'
     bool (*is_delim) (const void* data);
@@ -26,3 +27,5 @@ typedef struct
 
 } type_info;
 
+
+type_info* get_char_type();

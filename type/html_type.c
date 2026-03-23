@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-static size_t html_get_next_size(const void* data) {
+size_t html_get_next_size(const void* data) {
     const char* str = (const char*)data;
     if (*str == '\0') {
         return 0;
@@ -23,12 +23,12 @@ int html_compare(const void* a, const void* b) {
 }
 
 
-static size_t html_length(const void* a) {
+size_t html_length(const void* a) {
     return strlen((const char*)a);
 }
 
 
-static void* html_clone(const void* data, size_t l) {
+void* html_clone(const void* data, size_t l) {
     const char* s = (const char*)data;
     char* copy = malloc(l + 1);
     if (copy) {
@@ -38,19 +38,15 @@ static void* html_clone(const void* data, size_t l) {
     return copy;
 }
 
-static void html_free(void* data) {
+void html_free(void* data) {
     if (data) {
         free(data);
     }
 }
 
-static bool html_is_delim(const void* data) {
+bool html_is_delim(const void* data) {
     char p = *(const char*) data;
     return p == ' ' || p == '\n';
-}
-
-static void html_print(const void* a) {
-    printf("%s", (const char*)a);
 }
 
 type_info html_type = {
@@ -61,7 +57,6 @@ type_info html_type = {
     .is_delim = html_is_delim,
     .char_size = sizeof(char),
     .free_data = html_free,
-    .print = html_print
 };
 
 

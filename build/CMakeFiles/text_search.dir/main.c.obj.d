@@ -26,4 +26,12 @@ CMakeFiles/text_search.dir/main.c.obj: \
  C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
  C:/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h \
  C:/mingw64/x86_64-w64-mingw32/include/string.h \
- C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h
+ C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+ C:\Users\krove44\Desktop\hard_laba\ui/ui.h \
+ C:/mingw64/x86_64-w64-mingw32/include/locale.h \
+ C:/Users/krove44/Desktop/hard_laba/curser/include/curses.h \
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdarg.h \
+ C:/mingw64/x86_64-w64-mingw32/include/stdarg.h \
+ C:/mingw64/x86_64-w64-mingw32/include/_mingw_stdarg.h \
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h \
+ C:/mingw64/x86_64-w64-mingw32/include/stddef.h

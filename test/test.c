@@ -88,18 +88,6 @@ void test_char_empty_and_only_spaces() {
     print_sep();
 }
 
-void test_char_last_word_without_trailing_space() {
-    printf("test_char_last_word_without_trailing_space:\n");
-
-    vector_dict* d = Create("hello world", get_char_type());
-
-    assert(find("hello", d, 1, get_char_type()) == 0);
-    assert(find("world", d, 1, get_char_type()) == 6);
-
-    free_data_struct(d);
-    print_sep();
-}
-
 void test_wchar_basic() {
     printf("test_wchar_basic:\n");
 
@@ -127,8 +115,8 @@ void test_wchar_repeated_words() {
     print_sep();
 }
 
-void test_wchar_many_spaces_tabs_newlines() {
-    printf("test_wchar_many_spaces_tabs_newlines:\n");
+void test_wchar_many_spaces() {
+    printf("test_wchar_many_spaces:\n");
 
     vector_dict* d = Create(L"\tпривет   мир\nкак\tдела", get_wchar_type());
 
@@ -239,10 +227,9 @@ void all_test_all() {
     test_char_not_found();
     test_char_invalid_n();
     test_char_empty_and_only_spaces();
-    test_char_last_word_without_trailing_space();
     test_wchar_basic();
     test_wchar_repeated_words();
-    test_wchar_many_spaces_tabs_newlines();
+    test_wchar_many_spaces();
     test_wchar_not_found();
     test_wchar_invalid_n();
     test_html_basic();

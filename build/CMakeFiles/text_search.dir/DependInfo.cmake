@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/krove44/Desktop/hard_laba/type/char_type.c" "CMakeFiles/text_search.dir/type/char_type.c.obj" "gcc" "CMakeFiles/text_search.dir/type/char_type.c.obj.d"
   "C:/Users/krove44/Desktop/hard_laba/type/html_type.c" "CMakeFiles/text_search.dir/type/html_type.c.obj" "gcc" "CMakeFiles/text_search.dir/type/html_type.c.obj.d"
   "C:/Users/krove44/Desktop/hard_laba/type/wchar_type.c" "CMakeFiles/text_search.dir/type/wchar_type.c.obj" "gcc" "CMakeFiles/text_search.dir/type/wchar_type.c.obj.d"
+  "C:/Users/krove44/Desktop/hard_laba/ui/ui.c" "CMakeFiles/text_search.dir/ui/ui.c.obj" "gcc" "CMakeFiles/text_search.dir/ui/ui.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

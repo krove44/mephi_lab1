@@ -272,6 +272,30 @@ type/wchar_type.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/type/wchar_type.c.s
 .PHONY : type/wchar_type.c.s
 
+ui/ui.obj: ui/ui.c.obj
+.PHONY : ui/ui.obj
+
+# target to build an object file
+ui/ui.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/ui/ui.c.obj
+.PHONY : ui/ui.c.obj
+
+ui/ui.i: ui/ui.c.i
+.PHONY : ui/ui.i
+
+# target to preprocess a source file
+ui/ui.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/ui/ui.c.i
+.PHONY : ui/ui.c.i
+
+ui/ui.s: ui/ui.c.s
+.PHONY : ui/ui.s
+
+# target to generate assembly for a file
+ui/ui.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/ui/ui.c.s
+.PHONY : ui/ui.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -299,6 +323,9 @@ help:
 	@echo ... type/wchar_type.obj
 	@echo ... type/wchar_type.i
 	@echo ... type/wchar_type.s
+	@echo ... ui/ui.obj
+	@echo ... ui/ui.i
+	@echo ... ui/ui.s
 .PHONY : help
 
 

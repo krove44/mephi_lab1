@@ -1,7 +1,7 @@
 #pragma once
 
-#include "Error.h"
-#include "type/type_info.h"
+#include "../Error.h"
+#include "../type/type_info.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>

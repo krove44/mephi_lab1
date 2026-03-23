@@ -60,19 +60,6 @@ vector_dict* Create(void* str, type_info* type) {
     size_t start_id_logical = 0;
     size_t start_id_byte = 0;
     
-    // for(size_t i = 0; i <= len_str; i++) {
-    //     void* current_char_ptr = ptr + (i*(type->char_size));
-    //     if (type->is_delim(current_char_ptr)) {
-    //         size_t word_len = i - start_id;
-    //         if (word_len > 0){
-    //             void* word_start_ptr = ptr + (start_id * type->char_size);
-    //             create_new_element(word_start_ptr, word_len, start_id, vector, type);
-    //         }
-    //         start_id = i + 1;
-    //     }
-    // }
-    // return vector;
-
     while (current_byte < total_bytes) {
         void* current_ptr = ptr + current_byte;
         size_t step = type->get_next_size(current_ptr);

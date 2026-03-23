@@ -1,14 +1,11 @@
-#include <locale.h>
-#include <curses.h>
-#include <wchar.h>
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
-#include <windows.h>
-#include "data_structure.h"
-#include "test.h"
+#include "test/test.h"
+#include "ui/ui.h"
 
 int main() {
+    setlocale(LC_ALL, "");
+    //интерфейс
+    // start_interface();
+    //тесты
     all_test_all();
     return 0;
 }

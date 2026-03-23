@@ -98,11 +98,26 @@ CMakeFiles/text_search.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/text_search.dir/main.c.s"
 	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krove44\Desktop\hard_laba\main.c -o CMakeFiles\text_search.dir\main.c.s
 
+CMakeFiles/text_search.dir/ui/ui.c.obj: CMakeFiles/text_search.dir/flags.make
+CMakeFiles/text_search.dir/ui/ui.c.obj: CMakeFiles/text_search.dir/includes_C.rsp
+CMakeFiles/text_search.dir/ui/ui.c.obj: C:/Users/krove44/Desktop/hard_laba/ui/ui.c
+CMakeFiles/text_search.dir/ui/ui.c.obj: CMakeFiles/text_search.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\krove44\Desktop\hard_laba\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/text_search.dir/ui/ui.c.obj"
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/text_search.dir/ui/ui.c.obj -MF CMakeFiles\text_search.dir\ui\ui.c.obj.d -o CMakeFiles\text_search.dir\ui\ui.c.obj -c C:\Users\krove44\Desktop\hard_laba\ui\ui.c
+
+CMakeFiles/text_search.dir/ui/ui.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/text_search.dir/ui/ui.c.i"
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\krove44\Desktop\hard_laba\ui\ui.c > CMakeFiles\text_search.dir\ui\ui.c.i
+
+CMakeFiles/text_search.dir/ui/ui.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/text_search.dir/ui/ui.c.s"
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krove44\Desktop\hard_laba\ui\ui.c -o CMakeFiles\text_search.dir\ui\ui.c.s
+
 CMakeFiles/text_search.dir/type/char_type.c.obj: CMakeFiles/text_search.dir/flags.make
 CMakeFiles/text_search.dir/type/char_type.c.obj: CMakeFiles/text_search.dir/includes_C.rsp
 CMakeFiles/text_search.dir/type/char_type.c.obj: C:/Users/krove44/Desktop/hard_laba/type/char_type.c
 CMakeFiles/text_search.dir/type/char_type.c.obj: CMakeFiles/text_search.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\krove44\Desktop\hard_laba\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/text_search.dir/type/char_type.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\krove44\Desktop\hard_laba\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/text_search.dir/type/char_type.c.obj"
 	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/text_search.dir/type/char_type.c.obj -MF CMakeFiles\text_search.dir\type\char_type.c.obj.d -o CMakeFiles\text_search.dir\type\char_type.c.obj -c C:\Users\krove44\Desktop\hard_laba\type\char_type.c
 
 CMakeFiles/text_search.dir/type/char_type.c.i: cmake_force
@@ -117,7 +132,7 @@ CMakeFiles/text_search.dir/type/wchar_type.c.obj: CMakeFiles/text_search.dir/fla
 CMakeFiles/text_search.dir/type/wchar_type.c.obj: CMakeFiles/text_search.dir/includes_C.rsp
 CMakeFiles/text_search.dir/type/wchar_type.c.obj: C:/Users/krove44/Desktop/hard_laba/type/wchar_type.c
 CMakeFiles/text_search.dir/type/wchar_type.c.obj: CMakeFiles/text_search.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\krove44\Desktop\hard_laba\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/text_search.dir/type/wchar_type.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\krove44\Desktop\hard_laba\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/text_search.dir/type/wchar_type.c.obj"
 	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/text_search.dir/type/wchar_type.c.obj -MF CMakeFiles\text_search.dir\type\wchar_type.c.obj.d -o CMakeFiles\text_search.dir\type\wchar_type.c.obj -c C:\Users\krove44\Desktop\hard_laba\type\wchar_type.c
 
 CMakeFiles/text_search.dir/type/wchar_type.c.i: cmake_force
@@ -132,7 +147,7 @@ CMakeFiles/text_search.dir/type/html_type.c.obj: CMakeFiles/text_search.dir/flag
 CMakeFiles/text_search.dir/type/html_type.c.obj: CMakeFiles/text_search.dir/includes_C.rsp
 CMakeFiles/text_search.dir/type/html_type.c.obj: C:/Users/krove44/Desktop/hard_laba/type/html_type.c
 CMakeFiles/text_search.dir/type/html_type.c.obj: CMakeFiles/text_search.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\krove44\Desktop\hard_laba\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/text_search.dir/type/html_type.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\krove44\Desktop\hard_laba\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/text_search.dir/type/html_type.c.obj"
 	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/text_search.dir/type/html_type.c.obj -MF CMakeFiles\text_search.dir\type\html_type.c.obj.d -o CMakeFiles\text_search.dir\type\html_type.c.obj -c C:\Users\krove44\Desktop\hard_laba\type\html_type.c
 
 CMakeFiles/text_search.dir/type/html_type.c.i: cmake_force
@@ -147,7 +162,7 @@ CMakeFiles/text_search.dir/test/test.c.obj: CMakeFiles/text_search.dir/flags.mak
 CMakeFiles/text_search.dir/test/test.c.obj: CMakeFiles/text_search.dir/includes_C.rsp
 CMakeFiles/text_search.dir/test/test.c.obj: C:/Users/krove44/Desktop/hard_laba/test/test.c
 CMakeFiles/text_search.dir/test/test.c.obj: CMakeFiles/text_search.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\krove44\Desktop\hard_laba\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/text_search.dir/test/test.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\krove44\Desktop\hard_laba\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/text_search.dir/test/test.c.obj"
 	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/text_search.dir/test/test.c.obj -MF CMakeFiles\text_search.dir\test\test.c.obj.d -o CMakeFiles\text_search.dir\test\test.c.obj -c C:\Users\krove44\Desktop\hard_laba\test\test.c
 
 CMakeFiles/text_search.dir/test/test.c.i: cmake_force
@@ -162,6 +177,7 @@ CMakeFiles/text_search.dir/test/test.c.s: cmake_force
 text_search_OBJECTS = \
 "CMakeFiles/text_search.dir/data_structure/data_structure.c.obj" \
 "CMakeFiles/text_search.dir/main.c.obj" \
+"CMakeFiles/text_search.dir/ui/ui.c.obj" \
 "CMakeFiles/text_search.dir/type/char_type.c.obj" \
 "CMakeFiles/text_search.dir/type/wchar_type.c.obj" \
 "CMakeFiles/text_search.dir/type/html_type.c.obj" \
@@ -172,6 +188,7 @@ text_search_EXTERNAL_OBJECTS =
 
 text_search.exe: CMakeFiles/text_search.dir/data_structure/data_structure.c.obj
 text_search.exe: CMakeFiles/text_search.dir/main.c.obj
+text_search.exe: CMakeFiles/text_search.dir/ui/ui.c.obj
 text_search.exe: CMakeFiles/text_search.dir/type/char_type.c.obj
 text_search.exe: CMakeFiles/text_search.dir/type/wchar_type.c.obj
 text_search.exe: CMakeFiles/text_search.dir/type/html_type.c.obj
@@ -180,7 +197,7 @@ text_search.exe: CMakeFiles/text_search.dir/build.make
 text_search.exe: CMakeFiles/text_search.dir/linkLibs.rsp
 text_search.exe: CMakeFiles/text_search.dir/objects1.rsp
 text_search.exe: CMakeFiles/text_search.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\krove44\Desktop\hard_laba\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable text_search.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\krove44\Desktop\hard_laba\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C executable text_search.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\text_search.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

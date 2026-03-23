@@ -128,29 +128,29 @@ text_search/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/build
 .PHONY : text_search/fast
 
-data_structure.obj: data_structure.c.obj
-.PHONY : data_structure.obj
+data_structure/data_structure.obj: data_structure/data_structure.c.obj
+.PHONY : data_structure/data_structure.obj
 
 # target to build an object file
-data_structure.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/data_structure.c.obj
-.PHONY : data_structure.c.obj
+data_structure/data_structure.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/data_structure/data_structure.c.obj
+.PHONY : data_structure/data_structure.c.obj
 
-data_structure.i: data_structure.c.i
-.PHONY : data_structure.i
+data_structure/data_structure.i: data_structure/data_structure.c.i
+.PHONY : data_structure/data_structure.i
 
 # target to preprocess a source file
-data_structure.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/data_structure.c.i
-.PHONY : data_structure.c.i
+data_structure/data_structure.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/data_structure/data_structure.c.i
+.PHONY : data_structure/data_structure.c.i
 
-data_structure.s: data_structure.c.s
-.PHONY : data_structure.s
+data_structure/data_structure.s: data_structure/data_structure.c.s
+.PHONY : data_structure/data_structure.s
 
 # target to generate assembly for a file
-data_structure.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/data_structure.c.s
-.PHONY : data_structure.c.s
+data_structure/data_structure.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/data_structure/data_structure.c.s
+.PHONY : data_structure/data_structure.c.s
 
 main.obj: main.c.obj
 .PHONY : main.obj
@@ -176,29 +176,29 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/main.c.s
 .PHONY : main.c.s
 
-test.obj: test.c.obj
-.PHONY : test.obj
+test/test.obj: test/test.c.obj
+.PHONY : test/test.obj
 
 # target to build an object file
-test.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/test.c.obj
-.PHONY : test.c.obj
+test/test.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/test/test.c.obj
+.PHONY : test/test.c.obj
 
-test.i: test.c.i
-.PHONY : test.i
+test/test.i: test/test.c.i
+.PHONY : test/test.i
 
 # target to preprocess a source file
-test.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/test.c.i
-.PHONY : test.c.i
+test/test.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/test/test.c.i
+.PHONY : test/test.c.i
 
-test.s: test.c.s
-.PHONY : test.s
+test/test.s: test/test.c.s
+.PHONY : test/test.s
 
 # target to generate assembly for a file
-test.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/test.c.s
-.PHONY : test.c.s
+test/test.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/test/test.c.s
+.PHONY : test/test.c.s
 
 type/char_type.obj: type/char_type.c.obj
 .PHONY : type/char_type.obj
@@ -281,15 +281,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... text_search
-	@echo ... data_structure.obj
-	@echo ... data_structure.i
-	@echo ... data_structure.s
+	@echo ... data_structure/data_structure.obj
+	@echo ... data_structure/data_structure.i
+	@echo ... data_structure/data_structure.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... test.obj
-	@echo ... test.i
-	@echo ... test.s
+	@echo ... test/test.obj
+	@echo ... test/test.i
+	@echo ... test/test.s
 	@echo ... type/char_type.obj
 	@echo ... type/char_type.i
 	@echo ... type/char_type.s

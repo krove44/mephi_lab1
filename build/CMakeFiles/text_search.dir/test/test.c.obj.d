@@ -1,6 +1,6 @@
-CMakeFiles/text_search.dir/main.c.obj: \
- C:\Users\krove44\Desktop\hard_laba\main.c \
- C:\Users\krove44\Desktop\hard_laba\test/test.h \
+CMakeFiles/text_search.dir/test/test.c.obj: \
+ C:\Users\krove44\Desktop\hard_laba\test\test.c \
+ C:\Users\krove44\Desktop\hard_laba\test\test.h \
  C:/mingw64/x86_64-w64-mingw32/include/assert.h \
  C:/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
  C:/mingw64/x86_64-w64-mingw32/include/_mingw.h \
@@ -26,4 +26,7 @@ CMakeFiles/text_search.dir/main.c.obj: \
  C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
  C:/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h \
  C:/mingw64/x86_64-w64-mingw32/include/string.h \
- C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h
+ C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+ C:/mingw64/x86_64-w64-mingw32/include/wchar.h \
+ C:/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h \
+ C:/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h

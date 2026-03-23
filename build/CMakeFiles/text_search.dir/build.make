@@ -68,20 +68,20 @@ include CMakeFiles/text_search.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/text_search.dir/flags.make
 
-CMakeFiles/text_search.dir/data_structure.c.obj: CMakeFiles/text_search.dir/flags.make
-CMakeFiles/text_search.dir/data_structure.c.obj: CMakeFiles/text_search.dir/includes_C.rsp
-CMakeFiles/text_search.dir/data_structure.c.obj: C:/Users/krove44/Desktop/hard_laba/data_structure.c
-CMakeFiles/text_search.dir/data_structure.c.obj: CMakeFiles/text_search.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\krove44\Desktop\hard_laba\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/text_search.dir/data_structure.c.obj"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/text_search.dir/data_structure.c.obj -MF CMakeFiles\text_search.dir\data_structure.c.obj.d -o CMakeFiles\text_search.dir\data_structure.c.obj -c C:\Users\krove44\Desktop\hard_laba\data_structure.c
+CMakeFiles/text_search.dir/data_structure/data_structure.c.obj: CMakeFiles/text_search.dir/flags.make
+CMakeFiles/text_search.dir/data_structure/data_structure.c.obj: CMakeFiles/text_search.dir/includes_C.rsp
+CMakeFiles/text_search.dir/data_structure/data_structure.c.obj: C:/Users/krove44/Desktop/hard_laba/data_structure/data_structure.c
+CMakeFiles/text_search.dir/data_structure/data_structure.c.obj: CMakeFiles/text_search.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\krove44\Desktop\hard_laba\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/text_search.dir/data_structure/data_structure.c.obj"
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/text_search.dir/data_structure/data_structure.c.obj -MF CMakeFiles\text_search.dir\data_structure\data_structure.c.obj.d -o CMakeFiles\text_search.dir\data_structure\data_structure.c.obj -c C:\Users\krove44\Desktop\hard_laba\data_structure\data_structure.c
 
-CMakeFiles/text_search.dir/data_structure.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/text_search.dir/data_structure.c.i"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\krove44\Desktop\hard_laba\data_structure.c > CMakeFiles\text_search.dir\data_structure.c.i
+CMakeFiles/text_search.dir/data_structure/data_structure.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/text_search.dir/data_structure/data_structure.c.i"
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\krove44\Desktop\hard_laba\data_structure\data_structure.c > CMakeFiles\text_search.dir\data_structure\data_structure.c.i
 
-CMakeFiles/text_search.dir/data_structure.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/text_search.dir/data_structure.c.s"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krove44\Desktop\hard_laba\data_structure.c -o CMakeFiles\text_search.dir\data_structure.c.s
+CMakeFiles/text_search.dir/data_structure/data_structure.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/text_search.dir/data_structure/data_structure.c.s"
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krove44\Desktop\hard_laba\data_structure\data_structure.c -o CMakeFiles\text_search.dir\data_structure\data_structure.c.s
 
 CMakeFiles/text_search.dir/main.c.obj: CMakeFiles/text_search.dir/flags.make
 CMakeFiles/text_search.dir/main.c.obj: CMakeFiles/text_search.dir/includes_C.rsp
@@ -143,39 +143,39 @@ CMakeFiles/text_search.dir/type/html_type.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/text_search.dir/type/html_type.c.s"
 	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krove44\Desktop\hard_laba\type\html_type.c -o CMakeFiles\text_search.dir\type\html_type.c.s
 
-CMakeFiles/text_search.dir/test.c.obj: CMakeFiles/text_search.dir/flags.make
-CMakeFiles/text_search.dir/test.c.obj: CMakeFiles/text_search.dir/includes_C.rsp
-CMakeFiles/text_search.dir/test.c.obj: C:/Users/krove44/Desktop/hard_laba/test.c
-CMakeFiles/text_search.dir/test.c.obj: CMakeFiles/text_search.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\krove44\Desktop\hard_laba\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/text_search.dir/test.c.obj"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/text_search.dir/test.c.obj -MF CMakeFiles\text_search.dir\test.c.obj.d -o CMakeFiles\text_search.dir\test.c.obj -c C:\Users\krove44\Desktop\hard_laba\test.c
+CMakeFiles/text_search.dir/test/test.c.obj: CMakeFiles/text_search.dir/flags.make
+CMakeFiles/text_search.dir/test/test.c.obj: CMakeFiles/text_search.dir/includes_C.rsp
+CMakeFiles/text_search.dir/test/test.c.obj: C:/Users/krove44/Desktop/hard_laba/test/test.c
+CMakeFiles/text_search.dir/test/test.c.obj: CMakeFiles/text_search.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\krove44\Desktop\hard_laba\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/text_search.dir/test/test.c.obj"
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/text_search.dir/test/test.c.obj -MF CMakeFiles\text_search.dir\test\test.c.obj.d -o CMakeFiles\text_search.dir\test\test.c.obj -c C:\Users\krove44\Desktop\hard_laba\test\test.c
 
-CMakeFiles/text_search.dir/test.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/text_search.dir/test.c.i"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\krove44\Desktop\hard_laba\test.c > CMakeFiles\text_search.dir\test.c.i
+CMakeFiles/text_search.dir/test/test.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/text_search.dir/test/test.c.i"
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\krove44\Desktop\hard_laba\test\test.c > CMakeFiles\text_search.dir\test\test.c.i
 
-CMakeFiles/text_search.dir/test.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/text_search.dir/test.c.s"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krove44\Desktop\hard_laba\test.c -o CMakeFiles\text_search.dir\test.c.s
+CMakeFiles/text_search.dir/test/test.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/text_search.dir/test/test.c.s"
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krove44\Desktop\hard_laba\test\test.c -o CMakeFiles\text_search.dir\test\test.c.s
 
 # Object files for target text_search
 text_search_OBJECTS = \
-"CMakeFiles/text_search.dir/data_structure.c.obj" \
+"CMakeFiles/text_search.dir/data_structure/data_structure.c.obj" \
 "CMakeFiles/text_search.dir/main.c.obj" \
 "CMakeFiles/text_search.dir/type/char_type.c.obj" \
 "CMakeFiles/text_search.dir/type/wchar_type.c.obj" \
 "CMakeFiles/text_search.dir/type/html_type.c.obj" \
-"CMakeFiles/text_search.dir/test.c.obj"
+"CMakeFiles/text_search.dir/test/test.c.obj"
 
 # External object files for target text_search
 text_search_EXTERNAL_OBJECTS =
 
-text_search.exe: CMakeFiles/text_search.dir/data_structure.c.obj
+text_search.exe: CMakeFiles/text_search.dir/data_structure/data_structure.c.obj
 text_search.exe: CMakeFiles/text_search.dir/main.c.obj
 text_search.exe: CMakeFiles/text_search.dir/type/char_type.c.obj
 text_search.exe: CMakeFiles/text_search.dir/type/wchar_type.c.obj
 text_search.exe: CMakeFiles/text_search.dir/type/html_type.c.obj
-text_search.exe: CMakeFiles/text_search.dir/test.c.obj
+text_search.exe: CMakeFiles/text_search.dir/test/test.c.obj
 text_search.exe: CMakeFiles/text_search.dir/build.make
 text_search.exe: CMakeFiles/text_search.dir/linkLibs.rsp
 text_search.exe: CMakeFiles/text_search.dir/objects1.rsp

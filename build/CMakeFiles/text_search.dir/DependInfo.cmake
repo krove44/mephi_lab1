@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/krove44/Desktop/hard_laba/data_structure.c" "CMakeFiles/text_search.dir/data_structure.c.obj" "gcc" "CMakeFiles/text_search.dir/data_structure.c.obj.d"
+  "C:/Users/krove44/Desktop/hard_laba/data_structure/data_structure.c" "CMakeFiles/text_search.dir/data_structure/data_structure.c.obj" "gcc" "CMakeFiles/text_search.dir/data_structure/data_structure.c.obj.d"
   "C:/Users/krove44/Desktop/hard_laba/main.c" "CMakeFiles/text_search.dir/main.c.obj" "gcc" "CMakeFiles/text_search.dir/main.c.obj.d"
-  "C:/Users/krove44/Desktop/hard_laba/test.c" "CMakeFiles/text_search.dir/test.c.obj" "gcc" "CMakeFiles/text_search.dir/test.c.obj.d"
+  "C:/Users/krove44/Desktop/hard_laba/test/test.c" "CMakeFiles/text_search.dir/test/test.c.obj" "gcc" "CMakeFiles/text_search.dir/test/test.c.obj.d"
   "C:/Users/krove44/Desktop/hard_laba/type/char_type.c" "CMakeFiles/text_search.dir/type/char_type.c.obj" "gcc" "CMakeFiles/text_search.dir/type/char_type.c.obj.d"
   "C:/Users/krove44/Desktop/hard_laba/type/html_type.c" "CMakeFiles/text_search.dir/type/html_type.c.obj" "gcc" "CMakeFiles/text_search.dir/type/html_type.c.obj.d"
   "C:/Users/krove44/Desktop/hard_laba/type/wchar_type.c" "CMakeFiles/text_search.dir/type/wchar_type.c.obj" "gcc" "CMakeFiles/text_search.dir/type/wchar_type.c.obj.d"

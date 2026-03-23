@@ -26,7 +26,6 @@ void test_char_repeated_words() {
     vector_dict* d = Create("one two one two one", get_char_type());
 
     assert(find("one", d, 1, get_char_type()) == 0);
-    printf("%d", find("one", d, 2, get_char_type()));
     assert(find("one", d, 2, get_char_type()) == 8);
     assert(find("one", d, 3, get_char_type()) == 16);
 
@@ -43,8 +42,8 @@ void test_char_many_spaces() {
     vector_dict* d = Create("  alpha   beta    gamma ", get_char_type());
 
     assert(find("alpha", d, 1, get_char_type()) == 2);
-    assert(find("beta", d, 1, get_char_type()) == 3);
-    assert(find("gamma", d, 1, get_char_type()) == 4);
+    assert(find("beta", d, 1, get_char_type()) == 10);
+    assert(find("gamma", d, 1, get_char_type()) == 18);
 
     free_data_struct(d);
     print_sep();
@@ -95,7 +94,7 @@ void test_char_last_word_without_trailing_space() {
     vector_dict* d = Create("hello world", get_char_type());
 
     assert(find("hello", d, 1, get_char_type()) == 0);
-    assert(find("world", d, 1, get_char_type()) == 1);
+    assert(find("world", d, 1, get_char_type()) == 6);
 
     free_data_struct(d);
     print_sep();
@@ -107,8 +106,8 @@ void test_wchar_basic() {
     vector_dict* d = Create(L"я и костя", get_wchar_type());
 
     assert(find(L"я", d, 1, get_wchar_type()) == 0);
-    assert(find(L"и", d, 1, get_wchar_type()) == 1);
-    assert(find(L"костя", d, 1, get_wchar_type()) == 2);
+    assert(find(L"и", d, 1, get_wchar_type()) == 2);
+    assert(find(L"костя", d, 1, get_wchar_type()) == 4);
 
     free_data_struct(d);
     print_sep();
@@ -120,9 +119,9 @@ void test_wchar_repeated_words() {
     vector_dict* d = Create(L"привет саня как дела саня", get_wchar_type());
 
     assert(find(L"привет", d, 1, get_wchar_type()) == 0);
-    assert(find(L"саня", d, 1, get_wchar_type()) == 1);
-    assert(find(L"саня", d, 2, get_wchar_type()) == 4);
-    assert(find(L"дела", d, 1, get_wchar_type()) == 3);
+    assert(find(L"саня", d, 1, get_wchar_type()) == 7);
+    assert(find(L"саня", d, 2, get_wchar_type()) == 21);
+    assert(find(L"дела", d, 1, get_wchar_type()) == 16);
 
     free_data_struct(d);
     print_sep();
@@ -134,9 +133,9 @@ void test_wchar_many_spaces_tabs_newlines() {
     vector_dict* d = Create(L"\tпривет   мир\nкак\tдела", get_wchar_type());
 
     assert(find(L"привет", d, 1, get_wchar_type()) == 1);
-    assert(find(L"мир", d, 1, get_wchar_type()) == 2);
-    assert(find(L"как", d, 1, get_wchar_type()) == 3);
-    assert(find(L"дела", d, 1, get_wchar_type()) == 4);
+    assert(find(L"мир", d, 1, get_wchar_type()) == 10);
+    assert(find(L"как", d, 1, get_wchar_type()) == 14);
+    assert(find(L"дела", d, 1, get_wchar_type()) == 18);
 
     free_data_struct(d);
     print_sep();
@@ -173,7 +172,7 @@ void test_html_basic() {
     vector_dict* d = Create("Hello&nbsp;world test", get_html_type());
 
     assert(find("Hello&nbsp;world", d, 1, get_html_type()) == 0);
-    assert(find("test", d, 1, get_html_type()) == 1);
+    assert(find("test", d, 1, get_html_type()) == 12);
     assert(find("&nbsp;", d, 1, get_html_type()) == -1);
 
     free_data_struct(d);
@@ -186,8 +185,8 @@ void test_html_repeated_words() {
     vector_dict* d = Create("A&nbsp;B A&nbsp;B X", get_html_type());
 
     assert(find("A&nbsp;B", d, 1, get_html_type()) == 0);
-    assert(find("A&nbsp;B", d, 2, get_html_type()) == 1);
-    assert(find("X", d, 1, get_html_type()) == 2);
+    assert(find("A&nbsp;B", d, 2, get_html_type()) == 4);
+    assert(find("X", d, 1, get_html_type()) == 8);
 
     free_data_struct(d);
     print_sep();

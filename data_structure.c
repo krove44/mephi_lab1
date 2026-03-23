@@ -1,6 +1,7 @@
 #include "data_structure.h"
 
-void create_new_element(void* s, size_t len, size_t position, vector_dict* vec, type_info* type) {
+void create_new_element(void* slovo, size_t len, size_t position, vector_dict* vec, type_info* type) {
+    void* s = type->clone(slovo, len);
     //проверяю есть ли такое слово в мое словаре
     for (size_t i = 0; i < vec->size; i++){
         if (type->compare(vec->dict_data[i].string_data, s) == 0) {
@@ -80,10 +81,9 @@ vector_dict* Create(void* str, type_info* type) {
             if (word_len_bytes > 0){
                 void* word_start_ptr = ptr + start_id_byte;
                 create_new_element(word_start_ptr, word_len_bytes, start_id_logical, vector, type);
-                start_id_byte = current_byte + type->char_size;
-                start_id_logical = current_logical_id + 1;
-            }
-
+                }
+            start_id_byte = current_byte + type->char_size;
+            start_id_logical = current_logical_id + 1;
         }
         current_byte += step;
         current_logical_id++;

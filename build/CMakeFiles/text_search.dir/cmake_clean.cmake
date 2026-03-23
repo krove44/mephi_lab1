@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/text_search.dir/test.c.obj.d"
   "CMakeFiles/text_search.dir/type/char_type.c.obj"
   "CMakeFiles/text_search.dir/type/char_type.c.obj.d"
+  "CMakeFiles/text_search.dir/type/html_type.c.obj"
+  "CMakeFiles/text_search.dir/type/html_type.c.obj.d"
   "CMakeFiles/text_search.dir/type/wchar_type.c.obj"
   "CMakeFiles/text_search.dir/type/wchar_type.c.obj.d"
   "libtext_search.dll.a"

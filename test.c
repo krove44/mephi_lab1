@@ -1,42 +1,255 @@
 #include "test.h"
+#include <assert.h>
+#include <stdio.h>
+#include <wchar.h>
 
+void print_sep() {
+    printf("\n----------------------------\n\n");
+}
 
-void first_light_test() {
-    printf("\n");
-    printf("first_test:\n");
-    vector_dict* sany = Create("i am kostia", get_char_type());
-    assert(find("i", sany, 1, get_char_type()) == 0);
-    assert(find("am", sany, 1, get_char_type()) == 2);
-    assert(find("kostia", sany, 1, get_char_type()) == 5);
-    free_data_struct(sany);
-    printf("\n");
-    printf("----------------------------\n");
-    printf("\n");
-};
+void test_char_basic() {
+    printf("test_char_basic:\n");
 
+    vector_dict* d = Create("i am kostia", get_char_type());
 
-void first_light_test_error() {
-    printf("first_test_error:\n");
-    vector_dict* sany = Create("я и костя", get_char_type());
-    assert(find("петя", sany, -10, get_char_type()) == -1);
-    assert(find("олег", sany, 1, get_char_type()) == -1);
-    assert(find("костя", sany, 10000, get_char_type()) == -1);
-    free_data_struct(sany);
-    printf("\n");
-    printf("----------------------------\n");
-    printf("\n");
-};
+    assert(find("i", d, 1, get_char_type()) == 0);
+    assert(find("am", d, 1, get_char_type()) == 2);
+    assert(find("kostia", d, 1, get_char_type()) == 5);
 
-void fisrt_wchar_test() {
-    printf("fisrt_wchar_test:\n");
-    vector_dict* sany = Create(L"я и костя", get_wchar_type());
-    assert(find(L"я", sany, 1, get_wchar_type()) == 0);
-    assert(find(L"и", sany, 1, get_wchar_type()) == 2);
-    assert(find(L"костя", sany, 1, get_wchar_type()) == 4);
-    free_data_struct(sany);
-    printf("\n");
-    printf("----------------------------\n");
-    printf("\n");
+    free_data_struct(d);
+    print_sep();
+}
+
+void test_char_repeated_words() {
+    printf("test_char_repeated_words:\n");
+
+    vector_dict* d = Create("one two one two one", get_char_type());
+
+    assert(find("one", d, 1, get_char_type()) == 0);
+    printf("%d", find("one", d, 2, get_char_type()));
+    assert(find("one", d, 2, get_char_type()) == 8);
+    assert(find("one", d, 3, get_char_type()) == 16);
+
+    assert(find("two", d, 1, get_char_type()) == 4);
+    assert(find("two", d, 2, get_char_type()) == 12);
+
+    free_data_struct(d);
+    print_sep();
+}
+
+void test_char_many_spaces() {
+    printf("test_char_many_spaces:\n");
+
+    vector_dict* d = Create("  alpha   beta    gamma ", get_char_type());
+
+    assert(find("alpha", d, 1, get_char_type()) == 2);
+    assert(find("beta", d, 1, get_char_type()) == 3);
+    assert(find("gamma", d, 1, get_char_type()) == 4);
+
+    free_data_struct(d);
+    print_sep();
+}
+
+void test_char_not_found() {
+    printf("test_char_not_found:\n");
+
+    vector_dict* d = Create("a b c d", get_char_type());
+
+    assert(find("x", d, 1, get_char_type()) == -1);
+    assert(find("aa", d, 1, get_char_type()) == -1);
+
+    free_data_struct(d);
+    print_sep();
+}
+
+void test_char_invalid_n() {
+    printf("test_char_invalid_n:\n");
+
+    vector_dict* d = Create("a a a", get_char_type());
+
+    assert(find("a", d, 0, get_char_type()) == -1);
+    assert(find("a", d, -1, get_char_type()) == -1);
+    assert(find("a", d, 100, get_char_type()) == -1);
+
+    free_data_struct(d);
+    print_sep();
+}
+
+void test_char_empty_and_only_spaces() {
+    printf("test_char_empty_and_only_spaces:\n");
+
+    vector_dict* d1 = Create("", get_char_type());
+    assert(find("", d1, 1, get_char_type()) == -1);
+    free_data_struct(d1);
+
+    vector_dict* d2 = Create("     ", get_char_type());
+    assert(find("", d2, 1, get_char_type()) == -1);
+    free_data_struct(d2);
+
+    print_sep();
+}
+
+void test_char_last_word_without_trailing_space() {
+    printf("test_char_last_word_without_trailing_space:\n");
+
+    vector_dict* d = Create("hello world", get_char_type());
+
+    assert(find("hello", d, 1, get_char_type()) == 0);
+    assert(find("world", d, 1, get_char_type()) == 1);
+
+    free_data_struct(d);
+    print_sep();
+}
+
+void test_wchar_basic() {
+    printf("test_wchar_basic:\n");
+
+    vector_dict* d = Create(L"я и костя", get_wchar_type());
+
+    assert(find(L"я", d, 1, get_wchar_type()) == 0);
+    assert(find(L"и", d, 1, get_wchar_type()) == 1);
+    assert(find(L"костя", d, 1, get_wchar_type()) == 2);
+
+    free_data_struct(d);
+    print_sep();
+}
+
+void test_wchar_repeated_words() {
+    printf("test_wchar_repeated_words:\n");
+
+    vector_dict* d = Create(L"привет саня как дела саня", get_wchar_type());
+
+    assert(find(L"привет", d, 1, get_wchar_type()) == 0);
+    assert(find(L"саня", d, 1, get_wchar_type()) == 1);
+    assert(find(L"саня", d, 2, get_wchar_type()) == 4);
+    assert(find(L"дела", d, 1, get_wchar_type()) == 3);
+
+    free_data_struct(d);
+    print_sep();
+}
+
+void test_wchar_many_spaces_tabs_newlines() {
+    printf("test_wchar_many_spaces_tabs_newlines:\n");
+
+    vector_dict* d = Create(L"\tпривет   мир\nкак\tдела", get_wchar_type());
+
+    assert(find(L"привет", d, 1, get_wchar_type()) == 1);
+    assert(find(L"мир", d, 1, get_wchar_type()) == 2);
+    assert(find(L"как", d, 1, get_wchar_type()) == 3);
+    assert(find(L"дела", d, 1, get_wchar_type()) == 4);
+
+    free_data_struct(d);
+    print_sep();
+}
+
+void test_wchar_not_found() {
+    printf("test_wchar_not_found:\n");
+
+    vector_dict* d = Create(L"один два три", get_wchar_type());
+
+    assert(find(L"четыре", d, 1, get_wchar_type()) == -1);
+    assert(find(L"од", d, 1, get_wchar_type()) == -1);
+
+    free_data_struct(d);
+    print_sep();
+}
+
+void test_wchar_invalid_n() {
+    printf("test_wchar_invalid_n:\n");
+
+    vector_dict* d = Create(L"кот кот кот", get_wchar_type());
+
+    assert(find(L"кот", d, 0, get_wchar_type()) == -1);
+    assert(find(L"кот", d, -5, get_wchar_type()) == -1);
+    assert(find(L"кот", d, 10, get_wchar_type()) == -1);
+
+    free_data_struct(d);
+    print_sep();
+}
+
+void test_html_basic() {
+    printf("test_html_basic:\n");
+
+    vector_dict* d = Create("Hello&nbsp;world test", get_html_type());
+
+    assert(find("Hello&nbsp;world", d, 1, get_html_type()) == 0);
+    assert(find("test", d, 1, get_html_type()) == 1);
+    assert(find("&nbsp;", d, 1, get_html_type()) == -1);
+
+    free_data_struct(d);
+    print_sep();
+}
+
+void test_html_repeated_words() {
+    printf("test_html_repeated_words:\n");
+
+    vector_dict* d = Create("A&nbsp;B A&nbsp;B X", get_html_type());
+
+    assert(find("A&nbsp;B", d, 1, get_html_type()) == 0);
+    assert(find("A&nbsp;B", d, 2, get_html_type()) == 1);
+    assert(find("X", d, 1, get_html_type()) == 2);
+
+    free_data_struct(d);
+    print_sep();
+}
+
+void test_html_not_found() {
+    printf("test_html_not_found:\n");
+
+    vector_dict* d = Create("one two three", get_html_type());
+
+    assert(find("four", d, 1, get_html_type()) == -1);
+    assert(find("&copy;", d, 1, get_html_type()) == -1);
+
+    free_data_struct(d);
+    print_sep();
+}
+
+void test_html_invalid_n() {
+    printf("test_html_invalid_n:\n");
+
+    vector_dict* d = Create("a a a", get_html_type());
+
+    assert(find("a", d, 0, get_html_type()) == -1);
+    assert(find("a", d, -1, get_html_type()) == -1);
+    assert(find("a", d, 100, get_html_type()) == -1);
+
+    free_data_struct(d);
+    print_sep();
+}
+
+void test_html_empty_and_spaces() {
+    printf("test_html_empty_and_spaces:\n");
+
+    vector_dict* d1 = Create("", get_html_type());
+    assert(find("", d1, 1, get_html_type()) == -1);
+    free_data_struct(d1);
+
+    vector_dict* d2 = Create("     ", get_html_type());
+    assert(find("", d2, 1, get_html_type()) == -1);
+    free_data_struct(d2);
+
+    print_sep();
 }
 
 
+void all_test_all() {
+    test_char_basic();
+    test_char_repeated_words();
+    test_char_many_spaces();
+    test_char_not_found();
+    test_char_invalid_n();
+    test_char_empty_and_only_spaces();
+    test_char_last_word_without_trailing_space();
+    test_wchar_basic();
+    test_wchar_repeated_words();
+    test_wchar_many_spaces_tabs_newlines();
+    test_wchar_not_found();
+    test_wchar_invalid_n();
+    test_html_basic();
+    test_html_repeated_words();
+    test_html_not_found();
+    test_html_invalid_n();
+    test_html_empty_and_spaces();
+    printf("ALL TESTS PASSED\n");
+}

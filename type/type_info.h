@@ -5,6 +5,8 @@
 
 typedef struct 
 {
+    //функция для счета на сколько по байтово перемещаться
+    size_t (*get_next_size)(const void* data);
     // функция для сравнения двух слов
     int (*compare) (const void* item_in_dict, const void* word);
     
@@ -31,3 +33,4 @@ typedef struct
 
 type_info* get_char_type();
 type_info* get_wchar_type();
+type_info* get_html_type();

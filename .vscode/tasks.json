@@ -7,11 +7,14 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
+                "-I${workspaceFolder}/curser/include",
+                "-I${workspaceFolder}/type",
                 "${workspaceFolder}/*.c",
                 "${workspaceFolder}/type/*.c",
-                "-I${workspaceFolder}/type",
                 "-o",
-                "${workspaceFolder}/build/text_search.exe"
+                "${workspaceFolder}/build/text_search.exe",
+                "-LC:/Users/krove44/Desktop/hard_laba/curser/lib",
+                "-lpdcurses"
             ],
             "options": {
                 "cwd": "${workspaceFolder}"

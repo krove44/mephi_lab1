@@ -1,13 +1,14 @@
 #include <locale.h>
+#include <curses.h>
+#include <wchar.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
 #include <windows.h>
+#include "data_structure.h"
 #include "test.h"
 
-
 int main() {
-    SetConsoleOutputCP(65001);
-    setlocale(LC_ALL, ".UTF8");
-    first_light_test();
-    first_light_test_error();
-    fisrt_wchar_test();
+    all_test_all();
     return 0;
 }

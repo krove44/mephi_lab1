@@ -224,6 +224,30 @@ type/char_type.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/type/char_type.c.s
 .PHONY : type/char_type.c.s
 
+type/html_type.obj: type/html_type.c.obj
+.PHONY : type/html_type.obj
+
+# target to build an object file
+type/html_type.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/type/html_type.c.obj
+.PHONY : type/html_type.c.obj
+
+type/html_type.i: type/html_type.c.i
+.PHONY : type/html_type.i
+
+# target to preprocess a source file
+type/html_type.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/type/html_type.c.i
+.PHONY : type/html_type.c.i
+
+type/html_type.s: type/html_type.c.s
+.PHONY : type/html_type.s
+
+# target to generate assembly for a file
+type/html_type.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/type/html_type.c.s
+.PHONY : type/html_type.c.s
+
 type/wchar_type.obj: type/wchar_type.c.obj
 .PHONY : type/wchar_type.obj
 
@@ -269,6 +293,9 @@ help:
 	@echo ... type/char_type.obj
 	@echo ... type/char_type.i
 	@echo ... type/char_type.s
+	@echo ... type/html_type.obj
+	@echo ... type/html_type.i
+	@echo ... type/html_type.s
 	@echo ... type/wchar_type.obj
 	@echo ... type/wchar_type.i
 	@echo ... type/wchar_type.s

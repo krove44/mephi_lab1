@@ -1,6 +1,11 @@
 #include "type_info.h"
 #include <string.h>
 
+
+static size_t char_get_next_size(const void* data){
+    return sizeof(char);
+}
+
 static int char_compare(const void* a, const void* b) {
     return strcmp((const char*)a, (const char*)b);
 }
@@ -35,6 +40,7 @@ static void char_print(const void* a) {
 }
 
 type_info char_type = {
+    .get_next_size = char_get_next_size,
     .compare = char_compare,
     .get_len = char_length,
     .clone = char_clone,

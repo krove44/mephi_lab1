@@ -7,14 +7,20 @@ if(NOT MSVC)
     add_compile_options(-finput-charset=UTF-8 -fexec-charset=UTF-8)
 endif()
 
+include_directories(
+    ${CMAKE_SOURCE_DIR}/curser/include
+    ${CMAKE_SOURCE_DIR}/type
+)
+
+link_directories(${CMAKE_SOURCE_DIR}/curser/lib)
+
 add_executable(text_search 
     data_structure.c
     main.c
     type/char_type.c
     type/wchar_type.c
+    type/html_type.c
     test.c
-    data_structure.h
-    type/type_info.h
-    Error.h
-    test.h
 )
+
+target_link_libraries(text_search pdcurses)

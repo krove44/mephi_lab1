@@ -4,6 +4,10 @@
 #include <stdio.h>
 #include <stdbool.h>
 
+static size_t wchar_get_next_size(const void* data) {
+    return sizeof(wchar_t);
+}
+
 static int wchar_compare(const void* a, const void* b) {
     return wcscmp((const wchar_t*)a, (const wchar_t*)b);
 }
@@ -14,11 +18,10 @@ static size_t wchar_length(const void* a) {
 
 static void* wchar_clone(const void* data, size_t l) {
     const wchar_t* s = (const wchar_t*)data;
-    wchar_t* copy = malloc((l + 1) * sizeof(wchar_t));
-    if (copy) {
-        wmemcpy(copy, s, l);
-        copy[l] = L'\0';
-    }
+    size_t len = l / sizeof(wchar_t);
+    wchar_t* copy = malloc((len + 1) * sizeof(wchar_t));
+    wmemcpy(copy, s, len);
+    copy[len] = L'\0';
     return copy;
 }
 
@@ -30,7 +33,7 @@ static void wchar_free(void* data) {
 
 static bool wchar_is_delim(const void* data) {
     wchar_t p = *(const wchar_t*)data;
-    return p == L' ' || p == L'\n' || p == L'\0' || p == L'\t';
+    return p == L' ' || p == L'\n' || p == L'\t';
 }
 
 static void wchar_print(const void* a) {
@@ -38,6 +41,7 @@ static void wchar_print(const void* a) {
 }
 
 type_info wchar_type = {
+    .get_next_size = wchar_get_next_size,
     .compare = wchar_compare,
     .get_len = wchar_length,
     .clone = wchar_clone,

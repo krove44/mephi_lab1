@@ -85,20 +85,16 @@ vector_dict* Create(void* str, type_info* type) {
 
 int find(void* find_string, vector_dict* vec, int n, type_info* type) {
     if (n < 1){
-        print_info_about_error(BAD_ARGUMENT);
         return -1;
     }
     for (size_t i = 0; i < vec->size; i++){
         if (type->compare(find_string, vec->dict_data[i].string_data) == 0){
                 if (n > vec->dict_data[i].el.size){
-                    print_info_about_error(STRING_WITHOUT_POS);
                     return -1;
                 }
-                print_info_about_error(ALL_OK);
                 return vec->dict_data[i].el.number_in_text[n-1];
             };
         };
-    print_info_about_error(STRING_NOWHERE);
     return -1;
 };
 
@@ -112,22 +108,21 @@ void free_data_struct(vector_dict* vec) {
 }
 
 
-void print_info_about_error(Error type_error) {
-    if (type_error == ALL_OK) {
-        printf("ALL_OK\n");
+void print_info_about_error(void* find_string, vector_dict* vec, int n, type_info* type) {
+   if (n < 1){
+        printf("%d", BAD_ARGUMENT);
         return;
     }
-    if (type_error == BAD_ARGUMENT) {
-        printf("BAD_ARGUMENT\n");
-        return;
-    }
-    if (type_error == STRING_WITHOUT_POS) {
-        printf("STRING_WITHOUT_POS\n");
-        return;
-    }
-    if (type_error == STRING_NOWHERE){
-        printf("STRING_NOWHERE\n");
-        return;
-    }
-    
-}
+    for (size_t i = 0; i < vec->size; i++){
+        if (type->compare(find_string, vec->dict_data[i].string_data) == 0){
+                if (n > vec->dict_data[i].el.size){
+                    printf("%d", STRING_WITHOUT_POS);
+                    return;
+                }
+                printf("%d", ALL_OK);
+                return;
+            };
+        };
+    printf("%d", STRING_NOWHERE);
+    return;
+};

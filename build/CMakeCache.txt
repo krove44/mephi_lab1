@@ -219,6 +219,15 @@ TextSearch_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 TextSearch_SOURCE_DIR:STATIC=C:/Users/krove44/Desktop/hard_laba
 
+//Value Computed by CMake
+test_BINARY_DIR:STATIC=C:/Users/krove44/Desktop/hard_laba/build
+
+//Value Computed by CMake
+test_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+test_SOURCE_DIR:STATIC=C:/Users/krove44/Desktop/hard_laba
+
 
 ########################
 # INTERNAL cache entries

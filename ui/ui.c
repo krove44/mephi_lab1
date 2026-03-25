@@ -53,7 +53,7 @@ void start_interface() {
     }
     else if (choice == '3') {
         current_type = get_html_type();
-        printw("Enter HTML text (e.g. A&copy;B):\n> ");
+        printw("Enter HTML text:\n> ");
         refresh();
         echo();
         getnstr(text_buf, sizeof(text_buf) - 1);
@@ -61,7 +61,7 @@ void start_interface() {
 
         sany = Create(text_buf, current_type);
 
-        printw("\n\nEnter word or symbol (e.g. &copy; or ©): ");
+        printw("\n\nEnter word: ");
         refresh();
         echo();
         getnstr(search_buf, sizeof(search_buf) - 1);

@@ -239,3 +239,10 @@ void all_test_all() {
     test_html_empty_and_spaces();
     printf("ALL TESTS PASSED\n");
 }
+
+
+int main() {
+    //тесты
+    all_test_all();
+    return 0;
+}

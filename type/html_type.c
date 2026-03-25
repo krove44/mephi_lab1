@@ -64,3 +64,4 @@ type_info html_type = {
 type_info* get_html_type(){
     return &html_type;
 }
+

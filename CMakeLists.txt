@@ -8,23 +8,29 @@ if(NOT MSVC)
 endif()
 
 include_directories(
-    ${CMAKE_SOURCE_DIR}/curser/include
     ${CMAKE_SOURCE_DIR}/type
     ${CMAKE_SOURCE_DIR}/data_structure
     ${CMAKE_SOURCE_DIR}/test
-    ${CMAKE_SOURCE_DIR}/ui
+    ${CMAKE_SOURCE_DIR}/curser/include
 )
 
 link_directories(${CMAKE_SOURCE_DIR}/curser/lib)
 
-add_executable(text_search 
+add_executable(tests
     data_structure/data_structure.c
-    main.c
-    ui/ui.c
     type/char_type.c
     type/wchar_type.c
     type/html_type.c
     test/test.c
 )
 
-target_link_libraries(text_search pdcurses)
+add_executable(ui_app
+    main.c
+    data_structure/data_structure.c
+    type/char_type.c
+    type/wchar_type.c
+    type/html_type.c
+)
+
+target_compile_definitions(ui_app PRIVATE PDC_WIDE)
+target_link_libraries(ui_app pdcurses)

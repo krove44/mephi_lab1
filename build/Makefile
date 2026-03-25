@@ -116,24 +116,38 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named text_search
+# Target rules for targets named tests
 
 # Build rule for target.
-text_search: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 text_search
-.PHONY : text_search
+tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tests
+.PHONY : tests
 
 # fast build rule for target.
-text_search/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/build
-.PHONY : text_search/fast
+tests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\tests.dir\build.make CMakeFiles/tests.dir/build
+.PHONY : tests/fast
+
+#=============================================================================
+# Target rules for targets named ui_app
+
+# Build rule for target.
+ui_app: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ui_app
+.PHONY : ui_app
+
+# fast build rule for target.
+ui_app/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ui_app.dir\build.make CMakeFiles/ui_app.dir/build
+.PHONY : ui_app/fast
 
 data_structure/data_structure.obj: data_structure/data_structure.c.obj
 .PHONY : data_structure/data_structure.obj
 
 # target to build an object file
 data_structure/data_structure.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/data_structure/data_structure.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\tests.dir\build.make CMakeFiles/tests.dir/data_structure/data_structure.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ui_app.dir\build.make CMakeFiles/ui_app.dir/data_structure/data_structure.c.obj
 .PHONY : data_structure/data_structure.c.obj
 
 data_structure/data_structure.i: data_structure/data_structure.c.i
@@ -141,7 +155,8 @@ data_structure/data_structure.i: data_structure/data_structure.c.i
 
 # target to preprocess a source file
 data_structure/data_structure.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/data_structure/data_structure.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\tests.dir\build.make CMakeFiles/tests.dir/data_structure/data_structure.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ui_app.dir\build.make CMakeFiles/ui_app.dir/data_structure/data_structure.c.i
 .PHONY : data_structure/data_structure.c.i
 
 data_structure/data_structure.s: data_structure/data_structure.c.s
@@ -149,7 +164,8 @@ data_structure/data_structure.s: data_structure/data_structure.c.s
 
 # target to generate assembly for a file
 data_structure/data_structure.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/data_structure/data_structure.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\tests.dir\build.make CMakeFiles/tests.dir/data_structure/data_structure.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ui_app.dir\build.make CMakeFiles/ui_app.dir/data_structure/data_structure.c.s
 .PHONY : data_structure/data_structure.c.s
 
 main.obj: main.c.obj
@@ -157,7 +173,7 @@ main.obj: main.c.obj
 
 # target to build an object file
 main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/main.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ui_app.dir\build.make CMakeFiles/ui_app.dir/main.c.obj
 .PHONY : main.c.obj
 
 main.i: main.c.i
@@ -165,7 +181,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ui_app.dir\build.make CMakeFiles/ui_app.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -173,7 +189,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ui_app.dir\build.make CMakeFiles/ui_app.dir/main.c.s
 .PHONY : main.c.s
 
 test/test.obj: test/test.c.obj
@@ -181,7 +197,7 @@ test/test.obj: test/test.c.obj
 
 # target to build an object file
 test/test.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/test/test.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\tests.dir\build.make CMakeFiles/tests.dir/test/test.c.obj
 .PHONY : test/test.c.obj
 
 test/test.i: test/test.c.i
@@ -189,7 +205,7 @@ test/test.i: test/test.c.i
 
 # target to preprocess a source file
 test/test.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/test/test.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\tests.dir\build.make CMakeFiles/tests.dir/test/test.c.i
 .PHONY : test/test.c.i
 
 test/test.s: test/test.c.s
@@ -197,7 +213,7 @@ test/test.s: test/test.c.s
 
 # target to generate assembly for a file
 test/test.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/test/test.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\tests.dir\build.make CMakeFiles/tests.dir/test/test.c.s
 .PHONY : test/test.c.s
 
 type/char_type.obj: type/char_type.c.obj
@@ -205,7 +221,8 @@ type/char_type.obj: type/char_type.c.obj
 
 # target to build an object file
 type/char_type.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/type/char_type.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\tests.dir\build.make CMakeFiles/tests.dir/type/char_type.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ui_app.dir\build.make CMakeFiles/ui_app.dir/type/char_type.c.obj
 .PHONY : type/char_type.c.obj
 
 type/char_type.i: type/char_type.c.i
@@ -213,7 +230,8 @@ type/char_type.i: type/char_type.c.i
 
 # target to preprocess a source file
 type/char_type.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/type/char_type.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\tests.dir\build.make CMakeFiles/tests.dir/type/char_type.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ui_app.dir\build.make CMakeFiles/ui_app.dir/type/char_type.c.i
 .PHONY : type/char_type.c.i
 
 type/char_type.s: type/char_type.c.s
@@ -221,7 +239,8 @@ type/char_type.s: type/char_type.c.s
 
 # target to generate assembly for a file
 type/char_type.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/type/char_type.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\tests.dir\build.make CMakeFiles/tests.dir/type/char_type.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ui_app.dir\build.make CMakeFiles/ui_app.dir/type/char_type.c.s
 .PHONY : type/char_type.c.s
 
 type/html_type.obj: type/html_type.c.obj
@@ -229,7 +248,8 @@ type/html_type.obj: type/html_type.c.obj
 
 # target to build an object file
 type/html_type.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/type/html_type.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\tests.dir\build.make CMakeFiles/tests.dir/type/html_type.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ui_app.dir\build.make CMakeFiles/ui_app.dir/type/html_type.c.obj
 .PHONY : type/html_type.c.obj
 
 type/html_type.i: type/html_type.c.i
@@ -237,7 +257,8 @@ type/html_type.i: type/html_type.c.i
 
 # target to preprocess a source file
 type/html_type.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/type/html_type.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\tests.dir\build.make CMakeFiles/tests.dir/type/html_type.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ui_app.dir\build.make CMakeFiles/ui_app.dir/type/html_type.c.i
 .PHONY : type/html_type.c.i
 
 type/html_type.s: type/html_type.c.s
@@ -245,7 +266,8 @@ type/html_type.s: type/html_type.c.s
 
 # target to generate assembly for a file
 type/html_type.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/type/html_type.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\tests.dir\build.make CMakeFiles/tests.dir/type/html_type.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ui_app.dir\build.make CMakeFiles/ui_app.dir/type/html_type.c.s
 .PHONY : type/html_type.c.s
 
 type/wchar_type.obj: type/wchar_type.c.obj
@@ -253,7 +275,8 @@ type/wchar_type.obj: type/wchar_type.c.obj
 
 # target to build an object file
 type/wchar_type.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/type/wchar_type.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\tests.dir\build.make CMakeFiles/tests.dir/type/wchar_type.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ui_app.dir\build.make CMakeFiles/ui_app.dir/type/wchar_type.c.obj
 .PHONY : type/wchar_type.c.obj
 
 type/wchar_type.i: type/wchar_type.c.i
@@ -261,7 +284,8 @@ type/wchar_type.i: type/wchar_type.c.i
 
 # target to preprocess a source file
 type/wchar_type.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/type/wchar_type.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\tests.dir\build.make CMakeFiles/tests.dir/type/wchar_type.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ui_app.dir\build.make CMakeFiles/ui_app.dir/type/wchar_type.c.i
 .PHONY : type/wchar_type.c.i
 
 type/wchar_type.s: type/wchar_type.c.s
@@ -269,32 +293,9 @@ type/wchar_type.s: type/wchar_type.c.s
 
 # target to generate assembly for a file
 type/wchar_type.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/type/wchar_type.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\tests.dir\build.make CMakeFiles/tests.dir/type/wchar_type.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ui_app.dir\build.make CMakeFiles/ui_app.dir/type/wchar_type.c.s
 .PHONY : type/wchar_type.c.s
-
-ui/ui.obj: ui/ui.c.obj
-.PHONY : ui/ui.obj
-
-# target to build an object file
-ui/ui.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/ui/ui.c.obj
-.PHONY : ui/ui.c.obj
-
-ui/ui.i: ui/ui.c.i
-.PHONY : ui/ui.i
-
-# target to preprocess a source file
-ui/ui.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/ui/ui.c.i
-.PHONY : ui/ui.c.i
-
-ui/ui.s: ui/ui.c.s
-.PHONY : ui/ui.s
-
-# target to generate assembly for a file
-ui/ui.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\text_search.dir\build.make CMakeFiles/text_search.dir/ui/ui.c.s
-.PHONY : ui/ui.c.s
 
 # Help Target
 help:
@@ -304,7 +305,8 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... text_search
+	@echo ... tests
+	@echo ... ui_app
 	@echo ... data_structure/data_structure.obj
 	@echo ... data_structure/data_structure.i
 	@echo ... data_structure/data_structure.s
@@ -323,9 +325,6 @@ help:
 	@echo ... type/wchar_type.obj
 	@echo ... type/wchar_type.i
 	@echo ... type/wchar_type.s
-	@echo ... ui/ui.obj
-	@echo ... ui/ui.i
-	@echo ... ui/ui.s
 .PHONY : help
 
 

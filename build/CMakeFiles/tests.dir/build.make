@@ -68,71 +68,11 @@ include CMakeFiles/tests.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/tests.dir/flags.make
 
-CMakeFiles/tests.dir/data_structure/data_structure.c.obj: CMakeFiles/tests.dir/flags.make
-CMakeFiles/tests.dir/data_structure/data_structure.c.obj: CMakeFiles/tests.dir/includes_C.rsp
-CMakeFiles/tests.dir/data_structure/data_structure.c.obj: C:/Users/krove44/Desktop/hard_laba/data_structure/data_structure.c
-CMakeFiles/tests.dir/data_structure/data_structure.c.obj: CMakeFiles/tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\krove44\Desktop\hard_laba\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/tests.dir/data_structure/data_structure.c.obj"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/tests.dir/data_structure/data_structure.c.obj -MF CMakeFiles\tests.dir\data_structure\data_structure.c.obj.d -o CMakeFiles\tests.dir\data_structure\data_structure.c.obj -c C:\Users\krove44\Desktop\hard_laba\data_structure\data_structure.c
-
-CMakeFiles/tests.dir/data_structure/data_structure.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/tests.dir/data_structure/data_structure.c.i"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\krove44\Desktop\hard_laba\data_structure\data_structure.c > CMakeFiles\tests.dir\data_structure\data_structure.c.i
-
-CMakeFiles/tests.dir/data_structure/data_structure.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/tests.dir/data_structure/data_structure.c.s"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krove44\Desktop\hard_laba\data_structure\data_structure.c -o CMakeFiles\tests.dir\data_structure\data_structure.c.s
-
-CMakeFiles/tests.dir/type/char_type.c.obj: CMakeFiles/tests.dir/flags.make
-CMakeFiles/tests.dir/type/char_type.c.obj: CMakeFiles/tests.dir/includes_C.rsp
-CMakeFiles/tests.dir/type/char_type.c.obj: C:/Users/krove44/Desktop/hard_laba/type/char_type.c
-CMakeFiles/tests.dir/type/char_type.c.obj: CMakeFiles/tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\krove44\Desktop\hard_laba\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/tests.dir/type/char_type.c.obj"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/tests.dir/type/char_type.c.obj -MF CMakeFiles\tests.dir\type\char_type.c.obj.d -o CMakeFiles\tests.dir\type\char_type.c.obj -c C:\Users\krove44\Desktop\hard_laba\type\char_type.c
-
-CMakeFiles/tests.dir/type/char_type.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/tests.dir/type/char_type.c.i"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\krove44\Desktop\hard_laba\type\char_type.c > CMakeFiles\tests.dir\type\char_type.c.i
-
-CMakeFiles/tests.dir/type/char_type.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/tests.dir/type/char_type.c.s"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krove44\Desktop\hard_laba\type\char_type.c -o CMakeFiles\tests.dir\type\char_type.c.s
-
-CMakeFiles/tests.dir/type/wchar_type.c.obj: CMakeFiles/tests.dir/flags.make
-CMakeFiles/tests.dir/type/wchar_type.c.obj: CMakeFiles/tests.dir/includes_C.rsp
-CMakeFiles/tests.dir/type/wchar_type.c.obj: C:/Users/krove44/Desktop/hard_laba/type/wchar_type.c
-CMakeFiles/tests.dir/type/wchar_type.c.obj: CMakeFiles/tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\krove44\Desktop\hard_laba\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/tests.dir/type/wchar_type.c.obj"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/tests.dir/type/wchar_type.c.obj -MF CMakeFiles\tests.dir\type\wchar_type.c.obj.d -o CMakeFiles\tests.dir\type\wchar_type.c.obj -c C:\Users\krove44\Desktop\hard_laba\type\wchar_type.c
-
-CMakeFiles/tests.dir/type/wchar_type.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/tests.dir/type/wchar_type.c.i"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\krove44\Desktop\hard_laba\type\wchar_type.c > CMakeFiles\tests.dir\type\wchar_type.c.i
-
-CMakeFiles/tests.dir/type/wchar_type.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/tests.dir/type/wchar_type.c.s"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krove44\Desktop\hard_laba\type\wchar_type.c -o CMakeFiles\tests.dir\type\wchar_type.c.s
-
-CMakeFiles/tests.dir/type/html_type.c.obj: CMakeFiles/tests.dir/flags.make
-CMakeFiles/tests.dir/type/html_type.c.obj: CMakeFiles/tests.dir/includes_C.rsp
-CMakeFiles/tests.dir/type/html_type.c.obj: C:/Users/krove44/Desktop/hard_laba/type/html_type.c
-CMakeFiles/tests.dir/type/html_type.c.obj: CMakeFiles/tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\krove44\Desktop\hard_laba\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/tests.dir/type/html_type.c.obj"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/tests.dir/type/html_type.c.obj -MF CMakeFiles\tests.dir\type\html_type.c.obj.d -o CMakeFiles\tests.dir\type\html_type.c.obj -c C:\Users\krove44\Desktop\hard_laba\type\html_type.c
-
-CMakeFiles/tests.dir/type/html_type.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/tests.dir/type/html_type.c.i"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\krove44\Desktop\hard_laba\type\html_type.c > CMakeFiles\tests.dir\type\html_type.c.i
-
-CMakeFiles/tests.dir/type/html_type.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/tests.dir/type/html_type.c.s"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krove44\Desktop\hard_laba\type\html_type.c -o CMakeFiles\tests.dir\type\html_type.c.s
-
 CMakeFiles/tests.dir/test/test.c.obj: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/test/test.c.obj: CMakeFiles/tests.dir/includes_C.rsp
 CMakeFiles/tests.dir/test/test.c.obj: C:/Users/krove44/Desktop/hard_laba/test/test.c
 CMakeFiles/tests.dir/test/test.c.obj: CMakeFiles/tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\krove44\Desktop\hard_laba\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/tests.dir/test/test.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\krove44\Desktop\hard_laba\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/tests.dir/test/test.c.obj"
 	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/tests.dir/test/test.c.obj -MF CMakeFiles\tests.dir\test\test.c.obj.d -o CMakeFiles\tests.dir\test\test.c.obj -c C:\Users\krove44\Desktop\hard_laba\test\test.c
 
 CMakeFiles/tests.dir/test/test.c.i: cmake_force
@@ -145,25 +85,18 @@ CMakeFiles/tests.dir/test/test.c.s: cmake_force
 
 # Object files for target tests
 tests_OBJECTS = \
-"CMakeFiles/tests.dir/data_structure/data_structure.c.obj" \
-"CMakeFiles/tests.dir/type/char_type.c.obj" \
-"CMakeFiles/tests.dir/type/wchar_type.c.obj" \
-"CMakeFiles/tests.dir/type/html_type.c.obj" \
 "CMakeFiles/tests.dir/test/test.c.obj"
 
 # External object files for target tests
 tests_EXTERNAL_OBJECTS =
 
-tests.exe: CMakeFiles/tests.dir/data_structure/data_structure.c.obj
-tests.exe: CMakeFiles/tests.dir/type/char_type.c.obj
-tests.exe: CMakeFiles/tests.dir/type/wchar_type.c.obj
-tests.exe: CMakeFiles/tests.dir/type/html_type.c.obj
 tests.exe: CMakeFiles/tests.dir/test/test.c.obj
 tests.exe: CMakeFiles/tests.dir/build.make
+tests.exe: libcore.a
 tests.exe: CMakeFiles/tests.dir/linkLibs.rsp
 tests.exe: CMakeFiles/tests.dir/objects1.rsp
 tests.exe: CMakeFiles/tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\krove44\Desktop\hard_laba\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable tests.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\krove44\Desktop\hard_laba\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable tests.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\tests.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

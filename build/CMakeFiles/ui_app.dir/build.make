@@ -83,87 +83,37 @@ CMakeFiles/ui_app.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ui_app.dir/main.c.s"
 	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krove44\Desktop\hard_laba\main.c -o CMakeFiles\ui_app.dir\main.c.s
 
-CMakeFiles/ui_app.dir/data_structure/data_structure.c.obj: CMakeFiles/ui_app.dir/flags.make
-CMakeFiles/ui_app.dir/data_structure/data_structure.c.obj: CMakeFiles/ui_app.dir/includes_C.rsp
-CMakeFiles/ui_app.dir/data_structure/data_structure.c.obj: C:/Users/krove44/Desktop/hard_laba/data_structure/data_structure.c
-CMakeFiles/ui_app.dir/data_structure/data_structure.c.obj: CMakeFiles/ui_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\krove44\Desktop\hard_laba\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/ui_app.dir/data_structure/data_structure.c.obj"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ui_app.dir/data_structure/data_structure.c.obj -MF CMakeFiles\ui_app.dir\data_structure\data_structure.c.obj.d -o CMakeFiles\ui_app.dir\data_structure\data_structure.c.obj -c C:\Users\krove44\Desktop\hard_laba\data_structure\data_structure.c
+CMakeFiles/ui_app.dir/ui/ui.c.obj: CMakeFiles/ui_app.dir/flags.make
+CMakeFiles/ui_app.dir/ui/ui.c.obj: CMakeFiles/ui_app.dir/includes_C.rsp
+CMakeFiles/ui_app.dir/ui/ui.c.obj: C:/Users/krove44/Desktop/hard_laba/ui/ui.c
+CMakeFiles/ui_app.dir/ui/ui.c.obj: CMakeFiles/ui_app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\krove44\Desktop\hard_laba\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/ui_app.dir/ui/ui.c.obj"
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ui_app.dir/ui/ui.c.obj -MF CMakeFiles\ui_app.dir\ui\ui.c.obj.d -o CMakeFiles\ui_app.dir\ui\ui.c.obj -c C:\Users\krove44\Desktop\hard_laba\ui\ui.c
 
-CMakeFiles/ui_app.dir/data_structure/data_structure.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ui_app.dir/data_structure/data_structure.c.i"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\krove44\Desktop\hard_laba\data_structure\data_structure.c > CMakeFiles\ui_app.dir\data_structure\data_structure.c.i
+CMakeFiles/ui_app.dir/ui/ui.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ui_app.dir/ui/ui.c.i"
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\krove44\Desktop\hard_laba\ui\ui.c > CMakeFiles\ui_app.dir\ui\ui.c.i
 
-CMakeFiles/ui_app.dir/data_structure/data_structure.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ui_app.dir/data_structure/data_structure.c.s"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krove44\Desktop\hard_laba\data_structure\data_structure.c -o CMakeFiles\ui_app.dir\data_structure\data_structure.c.s
-
-CMakeFiles/ui_app.dir/type/char_type.c.obj: CMakeFiles/ui_app.dir/flags.make
-CMakeFiles/ui_app.dir/type/char_type.c.obj: CMakeFiles/ui_app.dir/includes_C.rsp
-CMakeFiles/ui_app.dir/type/char_type.c.obj: C:/Users/krove44/Desktop/hard_laba/type/char_type.c
-CMakeFiles/ui_app.dir/type/char_type.c.obj: CMakeFiles/ui_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\krove44\Desktop\hard_laba\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/ui_app.dir/type/char_type.c.obj"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ui_app.dir/type/char_type.c.obj -MF CMakeFiles\ui_app.dir\type\char_type.c.obj.d -o CMakeFiles\ui_app.dir\type\char_type.c.obj -c C:\Users\krove44\Desktop\hard_laba\type\char_type.c
-
-CMakeFiles/ui_app.dir/type/char_type.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ui_app.dir/type/char_type.c.i"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\krove44\Desktop\hard_laba\type\char_type.c > CMakeFiles\ui_app.dir\type\char_type.c.i
-
-CMakeFiles/ui_app.dir/type/char_type.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ui_app.dir/type/char_type.c.s"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krove44\Desktop\hard_laba\type\char_type.c -o CMakeFiles\ui_app.dir\type\char_type.c.s
-
-CMakeFiles/ui_app.dir/type/wchar_type.c.obj: CMakeFiles/ui_app.dir/flags.make
-CMakeFiles/ui_app.dir/type/wchar_type.c.obj: CMakeFiles/ui_app.dir/includes_C.rsp
-CMakeFiles/ui_app.dir/type/wchar_type.c.obj: C:/Users/krove44/Desktop/hard_laba/type/wchar_type.c
-CMakeFiles/ui_app.dir/type/wchar_type.c.obj: CMakeFiles/ui_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\krove44\Desktop\hard_laba\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/ui_app.dir/type/wchar_type.c.obj"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ui_app.dir/type/wchar_type.c.obj -MF CMakeFiles\ui_app.dir\type\wchar_type.c.obj.d -o CMakeFiles\ui_app.dir\type\wchar_type.c.obj -c C:\Users\krove44\Desktop\hard_laba\type\wchar_type.c
-
-CMakeFiles/ui_app.dir/type/wchar_type.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ui_app.dir/type/wchar_type.c.i"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\krove44\Desktop\hard_laba\type\wchar_type.c > CMakeFiles\ui_app.dir\type\wchar_type.c.i
-
-CMakeFiles/ui_app.dir/type/wchar_type.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ui_app.dir/type/wchar_type.c.s"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krove44\Desktop\hard_laba\type\wchar_type.c -o CMakeFiles\ui_app.dir\type\wchar_type.c.s
-
-CMakeFiles/ui_app.dir/type/html_type.c.obj: CMakeFiles/ui_app.dir/flags.make
-CMakeFiles/ui_app.dir/type/html_type.c.obj: CMakeFiles/ui_app.dir/includes_C.rsp
-CMakeFiles/ui_app.dir/type/html_type.c.obj: C:/Users/krove44/Desktop/hard_laba/type/html_type.c
-CMakeFiles/ui_app.dir/type/html_type.c.obj: CMakeFiles/ui_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\krove44\Desktop\hard_laba\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/ui_app.dir/type/html_type.c.obj"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ui_app.dir/type/html_type.c.obj -MF CMakeFiles\ui_app.dir\type\html_type.c.obj.d -o CMakeFiles\ui_app.dir\type\html_type.c.obj -c C:\Users\krove44\Desktop\hard_laba\type\html_type.c
-
-CMakeFiles/ui_app.dir/type/html_type.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/ui_app.dir/type/html_type.c.i"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\krove44\Desktop\hard_laba\type\html_type.c > CMakeFiles\ui_app.dir\type\html_type.c.i
-
-CMakeFiles/ui_app.dir/type/html_type.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ui_app.dir/type/html_type.c.s"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krove44\Desktop\hard_laba\type\html_type.c -o CMakeFiles\ui_app.dir\type\html_type.c.s
+CMakeFiles/ui_app.dir/ui/ui.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/ui_app.dir/ui/ui.c.s"
+	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\krove44\Desktop\hard_laba\ui\ui.c -o CMakeFiles\ui_app.dir\ui\ui.c.s
 
 # Object files for target ui_app
 ui_app_OBJECTS = \
 "CMakeFiles/ui_app.dir/main.c.obj" \
-"CMakeFiles/ui_app.dir/data_structure/data_structure.c.obj" \
-"CMakeFiles/ui_app.dir/type/char_type.c.obj" \
-"CMakeFiles/ui_app.dir/type/wchar_type.c.obj" \
-"CMakeFiles/ui_app.dir/type/html_type.c.obj"
+"CMakeFiles/ui_app.dir/ui/ui.c.obj"
 
 # External object files for target ui_app
 ui_app_EXTERNAL_OBJECTS =
 
 ui_app.exe: CMakeFiles/ui_app.dir/main.c.obj
-ui_app.exe: CMakeFiles/ui_app.dir/data_structure/data_structure.c.obj
-ui_app.exe: CMakeFiles/ui_app.dir/type/char_type.c.obj
-ui_app.exe: CMakeFiles/ui_app.dir/type/wchar_type.c.obj
-ui_app.exe: CMakeFiles/ui_app.dir/type/html_type.c.obj
+ui_app.exe: CMakeFiles/ui_app.dir/ui/ui.c.obj
 ui_app.exe: CMakeFiles/ui_app.dir/build.make
+ui_app.exe: libcore.a
 ui_app.exe: CMakeFiles/ui_app.dir/linkLibs.rsp
 ui_app.exe: CMakeFiles/ui_app.dir/objects1.rsp
 ui_app.exe: CMakeFiles/ui_app.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\krove44\Desktop\hard_laba\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable ui_app.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\krove44\Desktop\hard_laba\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable ui_app.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\ui_app.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

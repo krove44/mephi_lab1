@@ -1,4 +1,5 @@
-C:/Users/krove44/Desktop/hard_laba/build/CMakeFiles/tests.dir
+C:/Users/krove44/Desktop/hard_laba/build/CMakeFiles/core.dir
 C:/Users/krove44/Desktop/hard_laba/build/CMakeFiles/ui_app.dir
+C:/Users/krove44/Desktop/hard_laba/build/CMakeFiles/tests.dir
 C:/Users/krove44/Desktop/hard_laba/build/CMakeFiles/edit_cache.dir
 C:/Users/krove44/Desktop/hard_laba/build/CMakeFiles/rebuild_cache.dir

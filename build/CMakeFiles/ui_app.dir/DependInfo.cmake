@@ -8,11 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/krove44/Desktop/hard_laba/data_structure/data_structure.c" "CMakeFiles/ui_app.dir/data_structure/data_structure.c.obj" "gcc" "CMakeFiles/ui_app.dir/data_structure/data_structure.c.obj.d"
   "C:/Users/krove44/Desktop/hard_laba/main.c" "CMakeFiles/ui_app.dir/main.c.obj" "gcc" "CMakeFiles/ui_app.dir/main.c.obj.d"
-  "C:/Users/krove44/Desktop/hard_laba/type/char_type.c" "CMakeFiles/ui_app.dir/type/char_type.c.obj" "gcc" "CMakeFiles/ui_app.dir/type/char_type.c.obj.d"
-  "C:/Users/krove44/Desktop/hard_laba/type/html_type.c" "CMakeFiles/ui_app.dir/type/html_type.c.obj" "gcc" "CMakeFiles/ui_app.dir/type/html_type.c.obj.d"
-  "C:/Users/krove44/Desktop/hard_laba/type/wchar_type.c" "CMakeFiles/ui_app.dir/type/wchar_type.c.obj" "gcc" "CMakeFiles/ui_app.dir/type/wchar_type.c.obj.d"
+  "C:/Users/krove44/Desktop/hard_laba/ui/ui.c" "CMakeFiles/ui_app.dir/ui/ui.c.obj" "gcc" "CMakeFiles/ui_app.dir/ui/ui.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -1,0 +1,2 @@
+C:\mingw64\bin\ar.exe qc libcore.a CMakeFiles/core.dir/data_structure/data_structure.c.obj CMakeFiles/core.dir/type/char_type.c.obj CMakeFiles/core.dir/type/wchar_type.c.obj CMakeFiles/core.dir/type/html_type.c.obj
+C:\mingw64\bin\ranlib.exe libcore.a

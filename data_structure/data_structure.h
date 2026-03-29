@@ -42,6 +42,8 @@ int find(void* v_find_string, vector_dict* vec, int n, type_info* type);
 
 void free_data_struct(vector_dict* vec);
 
+void print_d(vector_dict* vec, type_info* type);
+
 void print_info_about_error(void* find_string, vector_dict* vec, int n, type_info* type);
 
 

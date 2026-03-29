@@ -1,7 +1,7 @@
 #include "data_structure.h"
 
-void create_new_element(void* slovo, size_t len, size_t position, vector_dict* vec, type_info* type) {
-    void* s = type->clone(slovo, len);
+void create_new_element(void* word, size_t len, size_t position, vector_dict* vec, type_info* type) {
+    void* s = type->clone(word, len);
     //проверяю есть ли такое слово в мое словаре
     for (size_t i = 0; i < vec->size; i++){
         if (type->compare(vec->dict_data[i].string_data, s) == 0) {
@@ -96,6 +96,25 @@ int find(void* find_string, vector_dict* vec, int n, type_info* type) {
             };
         };
     return -1;
+};
+
+void print_d(vector_dict* vec, type_info* type) {
+    printf("\n");
+    for (size_t i = 0; i < vec->size; i++) {
+        size_t len = type->get_len(vec->dict_data[i].string_data);
+        unsigned char* current = (unsigned char*)vec->dict_data[i].string_data;
+        size_t printed = 0;
+        while (printed < len) {
+            type->print(current);
+            current += type->get_next_size(current);
+            printed++;
+        }
+        printf(" :");
+        for (size_t j = 0; j < vec->dict_data[i].el.size; j++){
+            printf(" %d", vec->dict_data[i].el.number_in_text[j]);
+        }
+        printf("\n");
+    };
 };
 
 void free_data_struct(vector_dict* vec) {

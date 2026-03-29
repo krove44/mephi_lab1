@@ -36,6 +36,11 @@ bool wchar_is_delim(const void* data) {
     return p == L' ' || p == L'\n' || p == L'\t';
 }
 
+void wchar_print(const void* data) {
+    const wchar_t p = *(wchar_t*) data;
+    wprintf(L"%lc", p);
+}
+
 type_info wchar_type = {
     .get_next_size = wchar_get_next_size,
     .compare = wchar_compare,
@@ -44,6 +49,7 @@ type_info wchar_type = {
     .is_delim = wchar_is_delim,
     .char_size = sizeof(wchar_t),
     .free_data = wchar_free,
+    .print = wchar_print
 };
 
 type_info* get_wchar_type() {

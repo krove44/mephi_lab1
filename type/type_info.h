@@ -24,6 +24,9 @@ typedef struct
     
     //функция для освобождения памяти  
     void (*free_data)(void* data);
+    
+    //функция для печати элемента 
+    void (*print)(const void* data);
 
 } type_info;
 

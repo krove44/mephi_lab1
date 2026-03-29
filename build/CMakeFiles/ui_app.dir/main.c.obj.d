@@ -16,12 +16,6 @@ CMakeFiles/ui_app.dir/main.c.obj: \
  C:/mingw64/x86_64-w64-mingw32/include/malloc.h \
  C:/mingw64/x86_64-w64-mingw32/include/string.h \
  C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
- C:/Users/krove44/Desktop/hard_laba/curser/include/curses.h \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdarg.h \
- C:/mingw64/x86_64-w64-mingw32/include/stdarg.h \
- C:/mingw64/x86_64-w64-mingw32/include/_mingw_stdarg.h \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h \
- C:/mingw64/x86_64-w64-mingw32/include/stddef.h \
  C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
  C:/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h \
  C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
@@ -31,6 +25,12 @@ CMakeFiles/ui_app.dir/main.c.obj: \
  C:/mingw64/x86_64-w64-mingw32/include/wchar.h \
  C:/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h \
  C:/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
+ C:/Users/krove44/Desktop/hard_laba/curser/include/curses.h \
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdarg.h \
+ C:/mingw64/x86_64-w64-mingw32/include/stdarg.h \
+ C:/mingw64/x86_64-w64-mingw32/include/_mingw_stdarg.h \
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h \
+ C:/mingw64/x86_64-w64-mingw32/include/stddef.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdbool.h \
  C:\Users\krove44\Desktop\hard_laba\data_structure/data_structure.h \
  C:/Users/krove44/Desktop/hard_laba/Error.h \

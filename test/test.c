@@ -182,11 +182,13 @@ void test_html_repeated_words() {
 
 void test_html_not_found() {
     printf("test_html_not_found:");
-
-    vector_dict* d = Create("one two three", get_html_type());
+    vector_dict* d = Create("one two three & & & && &&&&;;; ;; ;; ;;;;", get_html_type());
 
     assert(find("four", d, 1, get_html_type()) == -1);
     assert(find("&copy;", d, 1, get_html_type()) == -1);
+    assert(find("&&&&", d, 1, get_html_type()) == -1);
+    assert(find("&&;;", d, 1, get_html_type()) == -1);
+    assert(find("&;", d, 1, get_html_type()) == -1);
 
     free_data_struct(d);
     print_sep();
@@ -196,7 +198,6 @@ void test_html_invalid_n() {
     printf("test_html_invalid_n:");
 
     vector_dict* d = Create("a a a", get_html_type());
-
     assert(find("a", d, 0, get_html_type()) == -1);
     assert(find("a", d, -1, get_html_type()) == -1);
     assert(find("a", d, 100, get_html_type()) == -1);

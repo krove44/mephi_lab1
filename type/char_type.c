@@ -35,6 +35,11 @@ bool char_is_delim(const void* data) {
     return p == ' ' || p == '\n' || p == '\0';
 }
 
+void char_print(const void* data) {
+    char p = *(const char*) data;
+    printf("%c", p);
+}
+
 type_info char_type = {
     .get_next_size = char_get_next_size,
     .compare = char_compare,
@@ -43,6 +48,7 @@ type_info char_type = {
     .is_delim = char_is_delim,
     .char_size = sizeof(char),
     .free_data = char_free,
+    .print = char_print
 };
 
 type_info* get_char_type(){

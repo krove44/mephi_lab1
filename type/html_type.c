@@ -324,8 +324,24 @@ bool html_is_delim(const void* data) {
 }
 
 void html_print(const void* data) {
-    char p = *(const char*)data;
-    printf("%c", p);
+    const char* str = (const char*)data;
+    size_t step = html_get_next_size(data);
+
+    if (*str == '&' && step > 1) {
+        char entity_buf[32];
+        if (step < sizeof(entity_buf)) {
+            memcpy(entity_buf, str, step);
+            entity_buf[step] = '\0';
+
+            const char* decoded = decode_html_entity(entity_buf);
+            if (decoded != NULL) {
+                printf("%s", decoded);
+                return;
+            }
+        }
+    }
+
+    printf("%c", *str);
 }
 
 type_info html_type = {

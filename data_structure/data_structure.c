@@ -101,13 +101,15 @@ int find(void* find_string, vector_dict* vec, int n, type_info* type) {
 void print_d(vector_dict* vec, type_info* type) {
     printf("\n");
     for (size_t i = 0; i < vec->size; i++) {
-        size_t len = type->get_len(vec->dict_data[i].string_data);
+        size_t total_bytes = type->get_len(vec->dict_data[i].string_data) * type->char_size;
         unsigned char* current = (unsigned char*)vec->dict_data[i].string_data;
-        size_t printed = 0;
-        while (printed < len) {
+        size_t printed_bytes = 0;
+
+        while (printed_bytes < total_bytes) {
+            size_t step = type->get_next_size(current);
             type->print(current);
-            current += type->get_next_size(current);
-            printed++;
+            current += step;
+            printed_bytes += step;
         }
         printf(" :");
         for (size_t j = 0; j < vec->dict_data[i].el.size; j++){

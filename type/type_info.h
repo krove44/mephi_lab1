@@ -34,3 +34,5 @@ typedef struct
 type_info* get_char_type();
 type_info* get_wchar_type();
 type_info* get_html_type();
+
+char* decode_html_string(const char* data);

@@ -34,6 +34,7 @@ typedef struct
 }vector_dict;
 
 
+
 void create_new_element(void* s, size_t len, size_t position, vector_dict* vec, type_info* type);
 
 vector_dict* Create(void* v_str, type_info* type);

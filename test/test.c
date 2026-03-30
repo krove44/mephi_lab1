@@ -220,6 +220,17 @@ void test_html_empty_and_spaces() {
     print_sep();
 }
 
+void test_decode_html() {
+    printf("test_decode_html:");
+    char* decoded = decode_html_string("A&nbsp;B&lt;C&gt;");
+    assert(strcmp(decoded, "A B<C>") == 0);
+    free(decoded);
+    char* decoded1 = decode_html_string("&euro;&pound;&deg;");
+    assert(strcmp(decoded1, "€£°") == 0);
+    free(decoded1);
+    print_sep();
+}
+
 
 void all_test_all() {
     test_char_basic();
@@ -238,6 +249,7 @@ void all_test_all() {
     test_html_not_found();
     test_html_invalid_n();
     test_html_empty_and_spaces();
+    test_decode_html();
     printf("ALL TESTS PASSED\n");
 }
 
